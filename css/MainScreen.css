@@ -1,0 +1,35 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00aeef;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 3px solid #F78F1EFF;
+    box-shadow: #0000003b 0px 10px 5px -5px;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+
+footer {
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid #F78F1EFF;
+}
