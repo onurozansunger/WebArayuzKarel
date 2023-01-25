@@ -2,7 +2,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603</title>
-    <link rel="stylesheet" href="css/MainScreen.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/generalsettings.css" />
 </head>
 
 <body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
@@ -12,63 +14,49 @@
     </div>
 </div>
 
-<hr size="2" align="left" width="672" noshade color="#000000" />
-<table border="0"  width="672" cellpadding="0" cellspacing="0">
-    <tr >
-        <td width="162" valign="top">
-            <br />
-            <br />
-            <a href="systeminfo.html"><font face="Arial" size="2"><b>System Information</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            <font face="Arial" size="2"><b>Settings</b></font>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;
-            <a href="generalsettings.html"><font face="Arial" size="2"><b>General Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networksettings.html"><font face="Arial" size="2"><b>Network Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sipsettings.html"><font face="Arial" size="2"><b>Sip Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="callsettings.html"><font face="Arial" size="2"><b>Call Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="codecsettings.html"><font face="Arial" size="2"><b>Codec Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ringtonesettings.html"><font face="Arial" size="2"><b>Ringtone Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keypadtonesettings.html"><font face="Arial" size="2"><b>Keypad Tone Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gainsettings.html"><font face="Arial" size="2"><b>Gain Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="systemsettings.html"><font face="Arial" size="2"><b>System Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="timesettings.html"><font face="Arial" size="2"><b>Time Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="securitysettings.html"><font face="Arial" size="2"><b>Security Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keyprogram.html"><font face="Arial" size="2"><b>Key Programming</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ldapsettings.html"><font face="Arial" size="2"><b>LDAP Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            <a href="phonebook.html"><font face="Arial" size="2"><b>Phone Book</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            <font face="Arial" size="2"><b>Technical Support</b></font>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="factorysettings.html"><font face="Arial" size="2"><b>Factory Settings</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="fileupload.html"><font face="Arial" size="2"><b>Upload File</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="filedownload.html"><font face="Arial" size="2"><b>Download File</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="firmwareupdate.html"><font face="Arial" size="2"><b>Firmware Update</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networklog.html"><font face="Arial" size="2"><b>Network Log</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.karel.com.tr" target="_blank"><font face="Arial" size="2"><b>Karel Anasayfa</b></font></a>
-        </td>
+<ul class="menu">
+    <li class="header">
+        <a href="systeminfo.html">System Information</a>
+    </li>
+    <li class="header">
+        Settings
+        <ul>
+            <li><a href="generalsettings.html">General Settings</a></li>
+            <li><a href="networksettings.html">Network Settings</a></li>
+            <li><a href="sipsettings.html">Sip Settings</a></li>
+            <li><a href="callsettings.html">Call Settings</a></li>
+            <li><a href="codecsettings.html">Codec Settings</a></li>
+            <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+            <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+            <li><a href="gainsettings.html">Gain Settings</a></li>
+            <li><a href="systemsettings.html">System Settings</a></li>
+            <li><a href="timesettings.html">Time Settings</a></li>
+            <li><a href="securitysettings.html">Security Settings</a></li>
+            <li><a href="keyprogram.html">Key Programming</a></li>
+            <li><a href="ldapsettings.html">LDAP Settings</a></li>
+        </ul>
+    </li>
+    <li class="header">
+        <a href="phonebook.html">Phone Book</a>
+    </li>
+    <li class="header">
+        Technical Support
+        <ul>
+            <li><a href="factorysettings.html">Factory Settings</a></li>
+            <li><a href="fileupload.html">Upload File</a></li>
+            <li><a href="filedownload.html">Download File</a></li>
+            <li><a href="firmwareupdate.html">Firmware Update</a></li>
+            <li><a href="networklog.html">Network Log</a></li>
+            <li><a href="http://www.karel.com.tr">Karel Anasayfa</a></li>
+        </ul>
+    </li>
+</ul>
+ <div class="generalsettings">
+
+
         <td width="2" bgcolor="#000000" ></td>
         <td width="508" valign="top" align="right" >
             <font face="Arial" size="2"><i><b>General Settings</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
             <form method="POST" enctype="application/x-www-form-urlencoded" action="generalsettings">
                 <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
                     <tr><td><table><tr>
@@ -139,11 +127,11 @@
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Save">
+                <input class="save" type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+ </div>
 </body>
 </html>
