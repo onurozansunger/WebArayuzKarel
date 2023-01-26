@@ -1,143 +1,32 @@
 
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <style type="text/css">
-        <!--
-        a:link {text-decoration: none;}
-        a:visited {text-decoration: none;}
-        -->
-    </style>
-    <script type="text/javascript">
-        function SetTime()
-        {
-            var change_id;
-            change_id = document.forms[0].setTime.value;
-            switch(change_id)
-            {
-                case "1":
-                    document.forms[0].timeHour.disabled = 0;
-                    document.forms[0].timeMin.disabled = 0;
-                    document.forms[0].timeDay.disabled = 0;
-                    document.forms[0].timeMonth.disabled = 0;
-                    document.forms[0].timeYear.disabled = 0;
-                    break;
-                case "0":
-                    document.forms[0].timeHour.disabled = 1;
-                    document.forms[0].timeMin.disabled = 1;
-                    document.forms[0].timeDay.disabled = 1;
-                    document.forms[0].timeMonth.disabled = 1;
-                    document.forms[0].timeYear.disabled = 1;
-                    break;
-                default:
-                    break;
-            }
-        }
-        function SetDstType()
-        {
-            var change_id;
-            change_id = document.forms[0].DstType.value;
-            switch(change_id)
-            {
-                case "1":
-                    document.forms[0].DstDateStartMonth.disabled = 1;
-                    document.forms[0].DstDateStartDay.disabled = 1;
-                    document.forms[0].DstDateStartTime.disabled = 1;
-                    document.forms[0].DstDateEndMonth.disabled = 1;
-                    document.forms[0].DstDateEndDay.disabled = 1;
-                    document.forms[0].DstDateEndTime.disabled = 1;
-                    document.forms[0].DstWeekStartMonth.disabled = 0;
-                    document.forms[0].DstWeekStartWeek.disabled = 0;
-                    document.forms[0].DstWeekStartDay.disabled = 0;
-                    document.forms[0].DstWeekStartTime.disabled = 0;
-                    document.forms[0].DstWeekEndMonth.disabled = 0;
-                    document.forms[0].DstWeekEndWeek.disabled = 0;
-                    document.forms[0].DstWeekEndDay.disabled = 0;
-                    document.forms[0].DstWeekEndTime.disabled = 0;
-                    break;
-                case "0":
-                    document.forms[0].DstDateStartMonth.disabled = 0;
-                    document.forms[0].DstDateStartDay.disabled = 0;
-                    document.forms[0].DstDateStartTime.disabled = 0;
-                    document.forms[0].DstDateEndMonth.disabled = 0;
-                    document.forms[0].DstDateEndDay.disabled = 0;
-                    document.forms[0].DstDateEndTime.disabled = 0;
-                    document.forms[0].DstWeekStartMonth.disabled = 1;
-                    document.forms[0].DstWeekStartWeek.disabled = 1;
-                    document.forms[0].DstWeekStartDay.disabled = 1;
-                    document.forms[0].DstWeekStartTime.disabled = 1;
-                    document.forms[0].DstWeekEndMonth.disabled = 1;
-                    document.forms[0].DstWeekEndWeek.disabled = 1;
-                    document.forms[0].DstWeekEndDay.disabled = 1;
-                    document.forms[0].DstWeekEndTime.disabled = 1;
-                    break;
-                default:
-                    break;
-            }
-        }
-        function load_value()
-        {
-            SetTime();
-            SetDstType();
-        }
-    </script>
-
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/mainmenu.css" />
+    <link rel="stylesheet" href="css/timesettings.css" />
+    <link rel="stylesheet" href="css/menu.css" />
 </head>
-<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="load_value()">
-<img src="image.jpg" width="542" height="156" alt="" border="0" align="" />
-<hr size="2" align="left" width="672" noshade color="#000000" />
-<table border="0"  width="672" cellpadding="0" cellspacing="0">
-    <tr >
-        <td width="162" valign="top">
-            <br />
-            <br />
-            <a href="systeminfo.html"><font face="Arial" size="2"><b>Sistem Bilgisi</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            <font face="Arial" size="2"><b>Ayarlar</b></font>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="generalsettings.html"><font face="Arial" size="2"><b>Genel Ayarlar</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networksettings.html"><font face="Arial" size="2"><b>Ağ Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sipsettings.html"><font face="Arial" size="2"><b>Sip Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="callsettings.html"><font face="Arial" size="2"><b>Arama Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="codecsettings.html"><font face="Arial" size="2"><b>Kodek Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ringtonesettings.html"><font face="Arial" size="2"><b>Zil Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keypadtonesettings.html"><font face="Arial" size="2"><b>Tuş Sesi Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gainsettings.html"><font face="Arial" size="2"><b>Ses Seviye Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="systemsettings.html"><font face="Arial" size="2"><b>Sistem Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="timesettings.html"><font face="Arial" size="2"><b>Tarih Saat Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="securitysettings.html"><font face="Arial" size="2"><b>Güvenlik Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keyprogram.html"><font face="Arial" size="2"><b>Tuş Programlama</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ldapsettings.html"><font face="Arial" size="2"><b>LDAP Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            <a href="phonebook.html"><font face="Arial" size="2"><b>Telefon Defteri</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            <font face="Arial" size="2"><b>Teknik Destek</b></font>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="factorysettings.html"><font face="Arial" size="2"><b>Fabrika Ayarları</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="fileupload.html"><font face="Arial" size="2"><b>Dosya Yükle</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="filedownload.html"><font face="Arial" size="2"><b>Dosya İndir</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="firmwareupdate.html"><font face="Arial" size="2"><b>Yazılım Güncelle</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networklog.html"><font face="Arial" size="2"><b>Paket Log</b></font></a>
-            <hr size="1" align="left" width="160" noshade color="#000000" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.karel.com.tr" target="_blank"><font face="Arial" size="2"><b>Karel Anasayfa</b></font></a>
-        </td>
+
+<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<div class="navbar">
+    <div class="container">
+        <img class="logo" src="assets/logo.png" />
+    </div>
+</div>
+<div class="mainmenuframe">
+    <ul class="mainmenu">
+        <li><a class="mainheader" href="systeminfo.html">System Information</a></li>
+        <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+        <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+        <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="container">
+    </div>
+</div>
         <td width="2" bgcolor="#000000" ></td>
         <td width="508" valign="top" align="right" >
             <font face="Arial" size="2"><i><b>Tarih Saat Ayarları</b></i></font>
@@ -419,5 +308,79 @@
     </tr>
 </table>
 <hr align="left" width="672" noshade color="#000000"/>
+<script type="text/javascript">
+    function SetTime()
+    {
+        var change_id;
+        change_id = document.forms[0].setTime.value;
+        switch(change_id)
+        {
+            case "1":
+                document.forms[0].timeHour.disabled = 0;
+                document.forms[0].timeMin.disabled = 0;
+                document.forms[0].timeDay.disabled = 0;
+                document.forms[0].timeMonth.disabled = 0;
+                document.forms[0].timeYear.disabled = 0;
+                break;
+            case "0":
+                document.forms[0].timeHour.disabled = 1;
+                document.forms[0].timeMin.disabled = 1;
+                document.forms[0].timeDay.disabled = 1;
+                document.forms[0].timeMonth.disabled = 1;
+                document.forms[0].timeYear.disabled = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    function SetDstType()
+    {
+        var change_id;
+        change_id = document.forms[0].DstType.value;
+        switch(change_id)
+        {
+            case "1":
+                document.forms[0].DstDateStartMonth.disabled = 1;
+                document.forms[0].DstDateStartDay.disabled = 1;
+                document.forms[0].DstDateStartTime.disabled = 1;
+                document.forms[0].DstDateEndMonth.disabled = 1;
+                document.forms[0].DstDateEndDay.disabled = 1;
+                document.forms[0].DstDateEndTime.disabled = 1;
+                document.forms[0].DstWeekStartMonth.disabled = 0;
+                document.forms[0].DstWeekStartWeek.disabled = 0;
+                document.forms[0].DstWeekStartDay.disabled = 0;
+                document.forms[0].DstWeekStartTime.disabled = 0;
+                document.forms[0].DstWeekEndMonth.disabled = 0;
+                document.forms[0].DstWeekEndWeek.disabled = 0;
+                document.forms[0].DstWeekEndDay.disabled = 0;
+                document.forms[0].DstWeekEndTime.disabled = 0;
+                break;
+            case "0":
+                document.forms[0].DstDateStartMonth.disabled = 0;
+                document.forms[0].DstDateStartDay.disabled = 0;
+                document.forms[0].DstDateStartTime.disabled = 0;
+                document.forms[0].DstDateEndMonth.disabled = 0;
+                document.forms[0].DstDateEndDay.disabled = 0;
+                document.forms[0].DstDateEndTime.disabled = 0;
+                document.forms[0].DstWeekStartMonth.disabled = 1;
+                document.forms[0].DstWeekStartWeek.disabled = 1;
+                document.forms[0].DstWeekStartDay.disabled = 1;
+                document.forms[0].DstWeekStartTime.disabled = 1;
+                document.forms[0].DstWeekEndMonth.disabled = 1;
+                document.forms[0].DstWeekEndWeek.disabled = 1;
+                document.forms[0].DstWeekEndDay.disabled = 1;
+                document.forms[0].DstWeekEndTime.disabled = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    function load_value()
+    {
+        SetTime();
+        SetDstType();
+    }
+</script>
+
 </body>
 </html>
