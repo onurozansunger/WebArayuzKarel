@@ -1,6 +1,7 @@
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    background: #00aeef;
 }
 
 ul {
@@ -22,15 +23,4 @@ ul {
 
 .navbar .logo {
     height: 50px;
-}
-
-.footer
-{
-    font-weight: 300;
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #ffffff;
-    border-top: 2px solid #e9943e;
 }
