@@ -1,32 +1,42 @@
-.menu {
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+mainmenu {
     background-color: #00aeef;
     width: max-content;
     margin: 0;
     padding: 0;
     display: inline-block;
     box-shadow: #00000067 4px 0px 8px -1px;
+    list-style-type: none;
+    overflow: hidden;
 }
-
-.menu .header {
+.mainmenu ul {
+ padding: 0px;
+}
+ .mainheader {
     font-weight: 400;
     font-size: 18px;
-    border-bottom: 1px solid #f78f1e;
+     text-decoration: none;
+     text-align: center;
+     display: block;
+     color: black;
+     padding: 14px 16px;
+     float: top;
 }
-
-.menu li {
+.mainmenu li {
+    background-color: #00aeef;
     list-style: none;
     color: #ffffff;
     font-weight: 300;
-    padding: 6px 12px;
+    float: left;
 }
 
-
-.menu li a {
-    width: 100%;
-    color: #ffffff;
-    text-decoration: none;
-    display: block;
+.mainmenu li {
+    padding:auto;
 }
+
 .footer {
     font-weight: 300;
     text-align: center;
