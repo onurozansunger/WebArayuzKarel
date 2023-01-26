@@ -8,92 +8,6 @@
         a:visited {text-decoration: none;}
         -->
     </style>
-    <script type="text/javascript">
-        function OnIPType()
-        {
-            var change_id;
-            change_id = document.forms[0].IpType.value;
-            switch(change_id)
-            {
-                case "0":
-                    document.forms[0].Ip.disabled = 0;
-                    document.forms[0].Netmask.disabled = 0;
-                    document.forms[0].Gateway.disabled = 0;
-                    break;
-                case "1":
-                    document.forms[0].Ip.disabled = 1;
-                    document.forms[0].Netmask.disabled = 1;
-                    document.forms[0].Gateway.disabled = 1;
-                    break;
-                default:
-                    break;
-            }
-        }
-        function OnDnsType()
-        {
-            var change_id;
-            change_id = document.forms[0].DnsType.value;
-            switch(change_id)
-            {
-                case "0":
-                    document.forms[0].DnsIp1.disabled = 0;
-                    document.forms[0].DnsIp2.disabled = 0;
-                    break;
-                case "1":
-                    document.forms[0].DnsIp1.disabled = 1;
-                    document.forms[0].DnsIp2.disabled = 1;
-                    break;
-                default:
-                    break;
-            }
-        }
-        function OnIPv6Type()
-        {
-            var change_id;
-            change_id = document.forms[0].Ipv6Type.value;
-            switch(change_id)
-            {
-                case "0":
-                    document.forms[0].Ipv6Address.disabled = 0;
-                    document.forms[0].Ipv6Prefix.disabled = 0;
-                    document.forms[0].Ipv6Gateway.disabled = 0;
-                    break;
-                case "1":
-                    document.forms[0].Ipv6Address.disabled = 1;
-                    document.forms[0].Ipv6Prefix.disabled = 1;
-                    document.forms[0].Ipv6Gateway.disabled = 1;
-                    break;
-                default:
-                    break;
-            }
-        }
-        function OnIpv6DnsType()
-        {
-            var change_id;
-            change_id = document.forms[0].Ipv6DnsType.value;
-            switch(change_id)
-            {
-                case "0":
-                    document.forms[0].Ipv6DnsIp1.disabled = 0;
-                    document.forms[0].Ipv6DnsIp2.disabled = 0;
-                    break;
-                case "1":
-                    document.forms[0].Ipv6DnsIp1.disabled = 1;
-                    document.forms[0].Ipv6DnsIp2.disabled = 1;
-                    break;
-                default:
-                    break;
-            }
-        }
-        function load_value()
-        {
-            OnDnsType();
-            OnIPType();
-            OnIPv6Type();
-            OnIpv6DnsType();
-        }
-    </script>
-
     <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -305,5 +219,91 @@
     </tr>
 </table>
 <hr align="left" width="672" noshade color="#000000"/>
+<script type="text/javascript">
+    function OnIPType()
+    {
+        var change_id;
+        change_id = document.forms[0].IpType.value;
+        switch(change_id)
+        {
+            case "0":
+                document.forms[0].Ip.disabled = 0;
+                document.forms[0].Netmask.disabled = 0;
+                document.forms[0].Gateway.disabled = 0;
+                break;
+            case "1":
+                document.forms[0].Ip.disabled = 1;
+                document.forms[0].Netmask.disabled = 1;
+                document.forms[0].Gateway.disabled = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    function OnDnsType()
+    {
+        var change_id;
+        change_id = document.forms[0].DnsType.value;
+        switch(change_id)
+        {
+            case "0":
+                document.forms[0].DnsIp1.disabled = 0;
+                document.forms[0].DnsIp2.disabled = 0;
+                break;
+            case "1":
+                document.forms[0].DnsIp1.disabled = 1;
+                document.forms[0].DnsIp2.disabled = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    function OnIPv6Type()
+    {
+        var change_id;
+        change_id = document.forms[0].Ipv6Type.value;
+        switch(change_id)
+        {
+            case "0":
+                document.forms[0].Ipv6Address.disabled = 0;
+                document.forms[0].Ipv6Prefix.disabled = 0;
+                document.forms[0].Ipv6Gateway.disabled = 0;
+                break;
+            case "1":
+                document.forms[0].Ipv6Address.disabled = 1;
+                document.forms[0].Ipv6Prefix.disabled = 1;
+                document.forms[0].Ipv6Gateway.disabled = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    function OnIpv6DnsType()
+    {
+        var change_id;
+        change_id = document.forms[0].Ipv6DnsType.value;
+        switch(change_id)
+        {
+            case "0":
+                document.forms[0].Ipv6DnsIp1.disabled = 0;
+                document.forms[0].Ipv6DnsIp2.disabled = 0;
+                break;
+            case "1":
+                document.forms[0].Ipv6DnsIp1.disabled = 1;
+                document.forms[0].Ipv6DnsIp2.disabled = 1;
+                break;
+            default:
+                break;
+        }
+    }
+    function load_value()
+    {
+        OnDnsType();
+        OnIPType();
+        OnIPv6Type();
+        OnIpv6DnsType();
+    }
+</script>
 </body>
+
 </html>
