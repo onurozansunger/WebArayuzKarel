@@ -21,22 +21,18 @@ mainmenu {
      text-decoration: none;
      text-align: center;
      display: block;
-     color: black;
-     padding: 14px 16px;
-     float: top;
+     color: white;
+     padding: 14px 112px;
 }
 .mainmenu li {
     background-color: #00aeef;
     list-style: none;
-    color: #ffffff;
+    color: #e9943e;
     font-weight: 300;
-    float: left;
+    padding: 6px 12px;
+    border: #f78f1e;
+    float:left;
 }
-
-.mainmenu li {
-    padding:auto;
-}
-
 .footer {
     font-weight: 300;
     text-align: center;
