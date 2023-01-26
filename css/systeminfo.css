@@ -4,7 +4,12 @@
     padding: 50px 20px;
     background: white;
     width: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    border-bottom: 3px solid #e9943e;
+    border-right: 3px solid #e9943e;
+    border-left: 3px solid #e9943e;
+
 }
