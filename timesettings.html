@@ -1,0 +1,423 @@
+
+<html>
+<head>
+    <title>KAREL IPK-603</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <style type="text/css">
+        <!--
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        -->
+    </style>
+    <script type="text/javascript">
+        function SetTime()
+        {
+            var change_id;
+            change_id = document.forms[0].setTime.value;
+            switch(change_id)
+            {
+                case "1":
+                    document.forms[0].timeHour.disabled = 0;
+                    document.forms[0].timeMin.disabled = 0;
+                    document.forms[0].timeDay.disabled = 0;
+                    document.forms[0].timeMonth.disabled = 0;
+                    document.forms[0].timeYear.disabled = 0;
+                    break;
+                case "0":
+                    document.forms[0].timeHour.disabled = 1;
+                    document.forms[0].timeMin.disabled = 1;
+                    document.forms[0].timeDay.disabled = 1;
+                    document.forms[0].timeMonth.disabled = 1;
+                    document.forms[0].timeYear.disabled = 1;
+                    break;
+                default:
+                    break;
+            }
+        }
+        function SetDstType()
+        {
+            var change_id;
+            change_id = document.forms[0].DstType.value;
+            switch(change_id)
+            {
+                case "1":
+                    document.forms[0].DstDateStartMonth.disabled = 1;
+                    document.forms[0].DstDateStartDay.disabled = 1;
+                    document.forms[0].DstDateStartTime.disabled = 1;
+                    document.forms[0].DstDateEndMonth.disabled = 1;
+                    document.forms[0].DstDateEndDay.disabled = 1;
+                    document.forms[0].DstDateEndTime.disabled = 1;
+                    document.forms[0].DstWeekStartMonth.disabled = 0;
+                    document.forms[0].DstWeekStartWeek.disabled = 0;
+                    document.forms[0].DstWeekStartDay.disabled = 0;
+                    document.forms[0].DstWeekStartTime.disabled = 0;
+                    document.forms[0].DstWeekEndMonth.disabled = 0;
+                    document.forms[0].DstWeekEndWeek.disabled = 0;
+                    document.forms[0].DstWeekEndDay.disabled = 0;
+                    document.forms[0].DstWeekEndTime.disabled = 0;
+                    break;
+                case "0":
+                    document.forms[0].DstDateStartMonth.disabled = 0;
+                    document.forms[0].DstDateStartDay.disabled = 0;
+                    document.forms[0].DstDateStartTime.disabled = 0;
+                    document.forms[0].DstDateEndMonth.disabled = 0;
+                    document.forms[0].DstDateEndDay.disabled = 0;
+                    document.forms[0].DstDateEndTime.disabled = 0;
+                    document.forms[0].DstWeekStartMonth.disabled = 1;
+                    document.forms[0].DstWeekStartWeek.disabled = 1;
+                    document.forms[0].DstWeekStartDay.disabled = 1;
+                    document.forms[0].DstWeekStartTime.disabled = 1;
+                    document.forms[0].DstWeekEndMonth.disabled = 1;
+                    document.forms[0].DstWeekEndWeek.disabled = 1;
+                    document.forms[0].DstWeekEndDay.disabled = 1;
+                    document.forms[0].DstWeekEndTime.disabled = 1;
+                    break;
+                default:
+                    break;
+            }
+        }
+        function load_value()
+        {
+            SetTime();
+            SetDstType();
+        }
+    </script>
+
+</head>
+<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="load_value()">
+<img src="image.jpg" width="542" height="156" alt="" border="0" align="" />
+<hr size="2" align="left" width="672" noshade color="#000000" />
+<table border="0"  width="672" cellpadding="0" cellspacing="0">
+    <tr >
+        <td width="162" valign="top">
+            <br />
+            <br />
+            <a href="systeminfo.html"><font face="Arial" size="2"><b>Sistem Bilgisi</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            <font face="Arial" size="2"><b>Ayarlar</b></font>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="generalsettings.html"><font face="Arial" size="2"><b>Genel Ayarlar</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networksettings.html"><font face="Arial" size="2"><b>Ağ Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sipsettings.html"><font face="Arial" size="2"><b>Sip Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="callsettings.html"><font face="Arial" size="2"><b>Arama Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="codecsettings.html"><font face="Arial" size="2"><b>Kodek Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ringtonesettings.html"><font face="Arial" size="2"><b>Zil Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keypadtonesettings.html"><font face="Arial" size="2"><b>Tuş Sesi Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gainsettings.html"><font face="Arial" size="2"><b>Ses Seviye Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="systemsettings.html"><font face="Arial" size="2"><b>Sistem Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="timesettings.html"><font face="Arial" size="2"><b>Tarih Saat Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="securitysettings.html"><font face="Arial" size="2"><b>Güvenlik Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keyprogram.html"><font face="Arial" size="2"><b>Tuş Programlama</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ldapsettings.html"><font face="Arial" size="2"><b>LDAP Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            <a href="phonebook.html"><font face="Arial" size="2"><b>Telefon Defteri</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            <font face="Arial" size="2"><b>Teknik Destek</b></font>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="factorysettings.html"><font face="Arial" size="2"><b>Fabrika Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="fileupload.html"><font face="Arial" size="2"><b>Dosya Yükle</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="filedownload.html"><font face="Arial" size="2"><b>Dosya İndir</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="firmwareupdate.html"><font face="Arial" size="2"><b>Yazılım Güncelle</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networklog.html"><font face="Arial" size="2"><b>Paket Log</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.karel.com.tr" target="_blank"><font face="Arial" size="2"><b>Karel Anasayfa</b></font></a>
+        </td>
+        <td width="2" bgcolor="#000000" ></td>
+        <td width="508" valign="top" align="right" >
+            <font face="Arial" size="2"><i><b>Tarih Saat Ayarları</b></i></font>
+            <hr align="right" width="498" noshade color="#000000" />
+            <form method="POST" id=0 enctype="application/x-www-form-urlencoded" action="timesettings">
+                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
+                    <tr><td><table><tr>
+                        <td width="10" align=""></td>
+                        <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Zamanı Ayarla</b></font></td>
+                        <td width="300" align="left"><select id="setTime" name="setTime" align="left" onchange="SetTime()">
+                            <option value="0" selected>Devre Dışı</option>
+                            <option value="1">Etkin</option>
+                        </select>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Saati Ayarla</b></font></td>
+                            <td width="300" align="left"><input type="text" name="timeHour" value="09" maxlength="2" size="1">&nbsp;<b>:</b>&nbsp;
+                                <input type="text" name="timeMin" value="10" maxlength="2" size="1">
+                                <font face=Arial size=2 color=#0080C0><i>(Saat:Dakika)</i></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Tarihi Ayarla</b></font></td>
+                            <td width="300" align="left"><input type="text" name="timeDay" value="26" maxlength="2" size="1">&nbsp;<b>/</b>&nbsp;
+                                <input type="text" name="timeMonth" value="01" maxlength="2" size="1">&nbsp;<b>/</b>&nbsp;
+                                <input type="text" name="timeYear" value="2023" maxlength="4" size="2">
+                                <font face=Arial size=2 color=#0080C0><i>(Gün/Ay/Yıl)</i></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Tarih Formatı</b></font></td>
+                            <td width="300" align=""><select id="dateFormat" name="dateFormat" align="left" onchange="">
+                                <option value="0" selected>gg.aa.yyyy</option>
+                                <option value="1">aa.gg.yyyy</option>
+                                <option value="2">yyyy.aa.gg</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Zaman Dilimi</b></font></td>
+                            <td width="300" align="left"><select id="timeZone" name="timeZone" align="left" onchange="">
+                                <option value="0">(GMT-12:00)West International Date Line</option>
+                                <option value="1">(GMT-11:00)Midway Island,Samoa</option>
+                                <option value="2">(GMT-10:00)Hawaii</option>
+                                <option value="3">(GMT-09:00)Alaska</option>
+                                <option value="4">(GMT-08:00)Pacific Time(U.S. & Canada),Tijuana</option>
+                                <option value="5">(GMT-07:00)Mountain Time(U.S. & Canada)</option>
+                                <option value="6">(GMT-07:00)Arizona</option>
+                                <option value="7">(GMT-07:00)Chihuahua,La Paz,Mazatlan</option>
+                                <option value="8">(GMT-06:00)Saskatchewan</option>
+                                <option value="9">(GMT-06:00)Central Time(U.S. & Canada)</option>
+                                <option value="10">(GMT-06:00)Central America</option>
+                                <option value="11">(GMT-06:00)Guadalajara,Mexico City,Monterrey</option>
+                                <option value="12">(GMT-05:00)Bogota,Lima,Quito</option>
+                                <option value="13">(GMT-05:00)Eastern Time(U.S. & Canada)</option>
+                                <option value="14">(GMT-05:00)Indiana(East)</option>
+                                <option value="15">(GMT-04:30)Caracas</option>
+                                <option value="16">(GMT-04:00)Atlantic Time(Canada)</option>
+                                <option value="17">(GMT-04:00)La Paz</option>
+                                <option value="18">(GMT-04:00)Santiago</option>
+                                <option value="19">(GMT-03:30)Newfoundland</option>
+                                <option value="20">(GMT-03:00)Brasilia</option>
+                                <option value="21">(GMT-03:00)Buenos Aires,Georgetown</option>
+                                <option value="22">(GMT-03:00)Greenland</option>
+                                <option value="23">(GMT-02:00)Mid-Atlantic</option>
+                                <option value="24">(GMT-01:00)Cape Verde Is.</option>
+                                <option value="25">(GMT-01:00)Azores</option>
+                                <option value="26">(GMT)Greenwich mean time:Dublin,Edinburgh,London,Lisbon</option>
+                                <option value="27">(GMT)Casablanca,Monrovia</option>
+                                <option value="28">(GMT+01:00)Amsterdam,Berlin,Berne,Rome,Stockholm</option>
+                                <option value="29">(GMT+01:00)Belgrade,Bratislava,Budapest,Ljubljana</option>
+                                <option value="30">(GMT+01:00)Brussels,Copenhagen,Madrid,Paris</option>
+                                <option value="31">(GMT+01:00)Sarajevo,Skopje,Warsaw,Zagreb</option>
+                                <option value="32">(GMT+01:00)West Central Africa</option>
+                                <option value="33">(GMT+02:00)Bucharest,Chisinau</option>
+                                <option value="34">(GMT+02:00)Harare,Pretoria</option>
+                                <option value="35">(GMT+02:00)Helsinki,Kyiv,Riga,Sofia,Tallinn,Vilnius</option>
+                                <option value="36" selected>(GMT+02:00)Athens,Istanbul,Minsk</option>
+                                <option value="37">(GMT+02:00)Cairo,Beirut</option>
+                                <option value="38">(GMT+02:00)Jerusalem</option>
+                                <option value="39">(GMT+03:00)Baghdad</option>
+                                <option value="40">(GMT+03:00)Kuwait,Riyadh</option>
+                                <option value="41">(GMT+03:00)Moscow,St.Petersburg,Volgograd</option>
+                                <option value="42">(GMT+03:00)Nairobi</option>
+                                <option value="43">(GMT+03:30)Teheran</option>
+                                <option value="44">(GMT+04:00)Abu Dhabi,Muscat</option>
+                                <option value="45">(GMT+04:00)Baku,Tbilisi,Yerevan</option>
+                                <option value="46">(GMT+04:30)Kabul</option>
+                                <option value="47">(GMT+05:00)Ekaterinburg</option>
+                                <option value="48">(GMT+05:00)Islamabad,Karachi,Tashkent</option>
+                                <option value="49">(GMT+05:30)Madras,Calcutta,Bombay,New Delhi</option>
+                                <option value="50">(GMT+05:45)Katmandu</option>
+                                <option value="51">(GMT+06:00)Almaty,Novosibirsk</option>
+                                <option value="52">(GMT+06:00)Dacca</option>
+                                <option value="53">(GMT+06:00)Sri Jayawardenepura</option>
+                                <option value="54">(GMT+06:30)Rangoon</option>
+                                <option value="55">(GMT+07:00)Krasnoyarsk</option>
+                                <option value="56">(GMT+07:00)Bangkok,Jakarta,Hanoi</option>
+                                <option value="57">(GMT+08:00)Beijing,Chongqing,Hong Kong,Urumqi</option>
+                                <option value="58">(GMT+08:00)Kuala Lumpur,Singapore</option>
+                                <option value="59">(GMT+08:00)Perth</option>
+                                <option value="60">(GMT+08:00)Taipei</option>
+                                <option value="61">(GMT+08:00)Irkutsk,Ulan Bator</option>
+                                <option value="62">(GMT+09:00)Tokyo,Osaka,Sapporo</option>
+                                <option value="63">(GMT+09:00)Seoul</option>
+                                <option value="64">(GMT+09:00)Yakutsk</option>
+                                <option value="65">(GMT+09:30)Adelaide</option>
+                                <option value="66">(GMT+09:30)Darwin</option>
+                                <option value="67">(GMT+10:00)Brisbane</option>
+                                <option value="68">(GMT+10:00)Vladivostok</option>
+                                <option value="69">(GMT+10:00)Guam,Port Moresby</option>
+                                <option value="70">(GMT+10:00)Hobart</option>
+                                <option value="71">(GMT+10:00)Canberra,Melbourne,Sydney</option>
+                                <option value="72">(GMT+11:00)Magadan,Sol.Is.,New Caledonia</option>
+                                <option value="73">(GMT+12:00)Wellington,Auckland</option>
+                                <option value="74">(GMT+12:00)Fiji,Kamchatka,Marshall Is.</option>
+                                <option value="75">(GMT+13:00)Nuku'alofa</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Sntp Sunucu</b></font></td>
+                            <td width="300" align=""><input type="text" name="sntpServer" value="" maxlength="127" size="32">
+                                <font face=Arial size=2 color=#0080C0><i>(Ip veya Uri)</i></font></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Yaz Saati</b></font></td>
+                            <td width="300" align="left"><select id="DstEnable" name="DstEnable" align="left" onchange="">
+                                <option value="0">Devre Dışı</option>
+                                <option value="1" selected>Etkin</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Yaz Saati Ayarı</b></font></td>
+                            <td width="300" align="left"><select id="DstType" name="DstType" align="left" onchange="SetDstType()">
+                                <option value="0">Tarihe Göre</option>
+                                <option value="1" selected>Haftaya Göre</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ofset</b></font></td>
+                            <td width="300" align=""><input type="text" name="DstOfset" value="60" maxlength="4" size="2">
+                                <font face=Arial size=2 color=#0080C0><i>(Dakika)</i></font></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Ayı</b></font></td>
+                            <td width="300" align="left"><select id="DstWeekStartMonth" name="DstWeekStartMonth" align="left" onchange="">
+                                <option value="0">Ocak</option>
+                                <option value="1">Şubat</option>
+                                <option value="2" selected>Mart</option>
+                                <option value="3">Nisan</option>
+                                <option value="4">Mayıs</option>
+                                <option value="5">Haziran</option>
+                                <option value="6">Temmuz</option>
+                                <option value="7">Ağustos</option>
+                                <option value="8">Eylül</option>
+                                <option value="9">Ekim</option>
+                                <option value="10">Kasım</option>
+                                <option value="11">Aralık</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Günü</b></font></td>
+                            <td width="300" align="left"><select id="DstWeekStartDay" name="DstWeekStartDay" align="left" onchange="">
+                                <option value="0" selected>Pazar</option>
+                                <option value="1">Pazartesi</option>
+                                <option value="2">Salı</option>
+                                <option value="3">Çarşamba</option>
+                                <option value="4">Perşembe</option>
+                                <option value="5">Cuma</option>
+                                <option value="6">Cumartesi</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Haftası</b></font></td>
+                            <td width="300" align="left"><select id="DstWeekStartWeek" name="DstWeekStartWeek" align="left" onchange="">
+                                <option value="0">1. Hafta</option>
+                                <option value="1">2. Hafta</option>
+                                <option value="2">3. Hafta</option>
+                                <option value="3">4. Hafta</option>
+                                <option value="4" selected>Son Hafta</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Saati</b></font></td>
+                            <td width="300" align=""><input type="text" name="DstWeekStartTime" value="3" maxlength="2" size="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Ayı</b></font></td>
+                            <td width="300" align="left"><select id="DstWeekEndMonth" name="DstWeekEndMonth" align="left" onchange="">
+                                <option value="0">Ocak</option>
+                                <option value="1">Şubat</option>
+                                <option value="2">Mart</option>
+                                <option value="3">Nisan</option>
+                                <option value="4">Mayıs</option>
+                                <option value="5">Haziran</option>
+                                <option value="6">Temmuz</option>
+                                <option value="7">Ağustos</option>
+                                <option value="8">Eylül</option>
+                                <option value="9" selected>Ekim</option>
+                                <option value="10">Kasım</option>
+                                <option value="11">Aralık</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Günü</b></font></td>
+                            <td width="300" align="left"><select id="DstWeekEndDay" name="DstWeekEndDay" align="left" onchange="">
+                                <option value="0" selected>Pazar</option>
+                                <option value="1">Pazartesi</option>
+                                <option value="2">Salı</option>
+                                <option value="3">Çarşamba</option>
+                                <option value="4">Perşembe</option>
+                                <option value="5">Cuma</option>
+                                <option value="6">Cumartesi</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Haftası</b></font></td>
+                            <td width="300" align="left"><select id="DstWeekEndWeek" name="DstWeekEndWeek" align="left" onchange="">
+                                <option value="0">1. Hafta</option>
+                                <option value="1">2. Hafta</option>
+                                <option value="2">3. Hafta</option>
+                                <option value="3">4. Hafta</option>
+                                <option value="4" selected>Son Hafta</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Saati</b></font></td>
+                            <td width="300" align=""><input type="text" name="DstWeekEndTime" value="4" maxlength="2" size="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Zamanı</b></font></td>
+                            <td width="300" align="left"><font face=Arial size=2 color=#0080C0>&nbsp;<i>Ay</i>&nbsp;</font><input type="text" name="DstDateStartMonth" value="1" maxlength="2" size="1">
+                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Gün</i>&nbsp;</font><input type="text" name="DstDateStartDay" value="1" maxlength="2" size="1">
+                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Saat</i>&nbsp;</font><input type="text" name="DstDateStartTime" value="0" maxlength="2" size="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Zamanı</b></font></td>
+                            <td width="300" align="left"><font face=Arial size=2 color=#0080C0>&nbsp;<i>Ay</i>&nbsp;</font><input type="text" name="DstDateEndMonth" value="12" maxlength="2" size="1">
+                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Gün</i>&nbsp;</font><input type="text" name="DstDateEndDay" value="31" maxlength="2" size="1">
+                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Saat</i>&nbsp;</font><input type="text" name="DstDateEndTime" value="23" maxlength="2" size="1">
+                            </td>
+                        </tr>
+                    </table></td></tr></table>
+                <br>
+                <input type="submit" name="save" value="Kaydet">
+            </form>
+        </td>
+    </tr>
+</table>
+<hr align="left" width="672" noshade color="#000000"/>
+</body>
+</html>
