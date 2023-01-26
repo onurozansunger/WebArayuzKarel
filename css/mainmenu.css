@@ -1,8 +1,8 @@
-body {
+.body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
-mainmenu {
+.mainmenu {
     background-color: #00aeef;
     width: max-content;
     margin: 0;
@@ -12,8 +12,12 @@ mainmenu {
     list-style-type: none;
     overflow: hidden;
 }
-.mainmenu ul {
- padding: 0px;
+
+.mainmenu li a {
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
 }
  .mainheader {
     font-weight: 400;
@@ -22,7 +26,8 @@ mainmenu {
      text-align: center;
      display: block;
      color: white;
-     padding: 14px 112px;
+     border-right: 2px solid #ffffff;
+     padding: 14px 109px;
 }
 .mainmenu li {
     background-color: #00aeef;
@@ -30,7 +35,6 @@ mainmenu {
     color: #e9943e;
     font-weight: 300;
     padding: 6px 12px;
-    border: #f78f1e;
     float:left;
 }
 .footer {
