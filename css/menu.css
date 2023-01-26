@@ -7,6 +7,12 @@
     box-shadow: #00000067 4px 0px 8px -1px;
 }
 
+.menu .header {
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid #f78f1e;
+}
+
 .menu li {
     list-style: none;
     color: #ffffff;
@@ -14,11 +20,6 @@
     padding: 6px 12px;
 }
 
-.menu .header {
-    font-weight: 400;
-    font-size: 18px;
-    border-bottom: 1px solid #eaeaea;
-}
 
 .menu li a {
     width: 100%;
