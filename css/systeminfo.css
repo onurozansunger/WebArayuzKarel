@@ -15,4 +15,20 @@
 }
 .caption {
     font-size: xx-large;
-    color: #00aeef;
+    color: #00aeef;}
+.label
+{
+    font-size: large;
+    color: black;
+}
+
+.frame {
+    width: 60%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #e9943e;
+    vertical-align: top;
+    margin: 0 auto;
+}
