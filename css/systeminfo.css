@@ -1,4 +1,4 @@
-.systeminfo {
+.frame {
     display: inline-block;
     vertical-align: top;
     padding: 50px 20px;
@@ -15,4 +15,15 @@
 }
 .caption {
     font-size: xx-large;
-    color: #00aeef;
+    color: #00aeef;}
+.label
+{
+    font-size: large;
+    color: #f78f1e;
+}
+
+.value
+{
+    font-size: large;
+    color: #000000;
+}
