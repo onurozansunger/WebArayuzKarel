@@ -10,6 +10,8 @@
     border-bottom: 3px solid #f78f1e;
     border-right:3px solid #f78f1e;
     border-left:3px solid #f78f1e;
+    border-top: 3px solid #f78f1e;
+
 }
 
 .frame:before {
