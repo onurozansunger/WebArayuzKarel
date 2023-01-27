@@ -8,7 +8,7 @@
 <!-- style kısmını css oluşturup ekleyelim şimdilik tek dosya olsun diye stylın içine koydum -->
 
 <style>
-    :root {--app-bg: #fdfdfd;
+    :root {--app-bg: #00aeef;
         --text-color: #2c2c2c;}
 
     * { margin: 0;
@@ -22,10 +22,10 @@
     body #dark:checked ~ * *
     {   --app-bg: #424242;
         --text-color: #e0e0e0;
-        --mode-label-bg: #eeeeee;
-        --mode-label-after-bg: #383838;
+        --mode-label-bg: #e0e0e0;
+        --mode-label-after-bg: #e9943e;
         --mode-label-after-left: 32px;
-        --ops-color: #b45627;}
+        --ops-color: #e9943e;}
 
     #mode-label
     {   position: relative;
@@ -35,14 +35,14 @@
         display: inline-block;
         cursor: pointer;
         transition: all 0.3s;
-        background-color: var(--mode-label-bg, #363636);}
+        background-color: var(--mode-label-bg, #e0e0e0);}
     #mode-label::after
     {   content: "";
         border-radius: 100%;
         height: 16px;
         width: 16px;
         left: var(--mode-label-after-left, 2px);
-        background-color: var(--mode-label-after-bg, #e9e9e9);
+        background-color: var(--mode-label-after-bg, #e9943e);
         top: 2px;
         transition: all 0.3s;
         position: absolute;}
