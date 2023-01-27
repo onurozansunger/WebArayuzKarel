@@ -18,6 +18,7 @@ ul {
     background-color: #ffffff;
     padding: 20px 0;
     border-bottom: 3px solid #e9943e;
+    border-top: 3px solid #e9943e;
     box-shadow: #0000003b 0px 10px 5px -5px;
 }
 
