@@ -26,6 +26,8 @@
     font-weight: 300;
     padding: 6px 12px;
     float:left;
+    display: block;
+    text-decoration: none;
 }
 
 .mainmenu ul {
@@ -41,9 +43,9 @@
     text-decoration: none;
     display: block;
 }
- .mainheader {
-     font-weight: 400;
-     font-size: 18px;
-     Padding: 0 25px;
+.mainheader {
+    font-weight: 400;
+    font-size: 18px;
+    Padding: 0 25px;
 
 }
