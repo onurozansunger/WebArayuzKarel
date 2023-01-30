@@ -1,224 +1,136 @@
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <style type="text/css">
-        <!--
-        a:link {text-decoration: none;}
-        a:visited {text-decoration: none;}
-        -->
-    </style>
-    <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>KAREL IPK-603</title>
-        <link rel="stylesheet" href="css/general.css" />
-        <link rel="stylesheet" href="css/menu.css" />
-        <link rel="stylesheet" href="css/generalsettings.css" />
-    </head>
-
-<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+    <link rel="stylesheet" href="css/General.css" />
+    <link rel="stylesheet" href="css/mainmenu.css" />
+    <link rel="stylesheet" href="css/generalsettings.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
     </div>
 </div>
-
-<ul class="menu">
-    <li class="header">
-        <a href="systeminfo.html">System Information</a>
-    </li>
-    <li class="header">
-        Settings
-        <ul>
+<div class="mainmenuframe">
+    <ul class="mainmenu">
+        <li><a class="mainheader" href="systeminfo.html">System Information</a></li>
+        <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+        <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+        <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="container">
+    </div>
+</div>
+<div class="content">
+    <div class="sidebar">
+        <ul class="menu">
             <li><a href="generalsettings.html">General Settings</a></li>
             <li><a href="networksettings.html">Network Settings</a></li>
-            <li><a href="sipsettings.html">Sip Settings</a></li>
+            <li><a href="sipsettings.html">SIP Settings</a></li>
             <li><a href="callsettings.html">Call Settings</a></li>
             <li><a href="codecsettings.html">Codec Settings</a></li>
             <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
             <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
             <li><a href="gainsettings.html">Gain Settings</a></li>
-            <li><a href="systemsettings.html">System Settings</a></li>
+            <li><a href="systeminfo.html">System Settings</a></li>
             <li><a href="timesettings.html">Time Settings</a></li>
             <li><a href="securitysettings.html">Security Settings</a></li>
-            <li><a href="keyprogram.html">Key Programming</a></li>
+            <li><a href="keyprogram.html">Key Programming Settings</a></li>
             <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
         </ul>
-    </li>
-    <li class="header">
-        <a href="phonebook.html">Phone Book</a>
-    </li>
-    <li class="header">
-        Technical Support
-        <ul>
-            <li><a href="factorysettings.html">Factory Settings</a></li>
-            <li><a href="fileupload.html">Upload File</a></li>
-            <li><a href="filedownload.html">Download File</a></li>
-            <li><a href="firmwareupdate.html">Firmware Update</a></li>
-            <li><a href="networklog.html">Network Log</a></li>
-            <li><a href="http://www.karel.com.tr">Karel Anasayfa</a></li>
-        </ul>
-    </li>
-</ul>
-        <td width="2" bgcolor="#000000" ></td>
-        <td width="508" valign="top" align="right" >
-            <font face="Arial" size="2"><i><b>Ağ Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
-            <form method="POST" enctype="application/x-www-form-urlencoded" action="networksettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Ip Tipi</b></font></td>
-                        <td width="300" align=""><select id="IpType" name="IpType" align="left" onchange="OnIPType()">
-                            <option value="0" selected>Statik</option>
-                            <option value="1">Dhcp</option>
-                        </select>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Ip</b></font></td>
-                            <td width="300" align=""><input type="text" name="Ip" value="192.168.184.119" maxlength="15" size="15">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Netmask</b></font></td>
-                            <td width="300" align=""><input type="text" name="Netmask" value="255.255.192.0" maxlength="15" size="15">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Gateway</b></font></td>
-                            <td width="300" align=""><input type="text" name="Gateway" value="192.168.128.200" maxlength="15" size="15">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Dns Tipi</b></font></td>
-                            <td width="300" align=""><select id="DnsType" name="DnsType" align="left" onchange="OnDnsType()">
-                                <option value="0" selected>Statik</option>
-                                <option value="1">Dhcp</option>
-                            </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Birincil Dns Ip</b></font></td>
-                            <td width="300" align=""><input type="text" name="DnsIp1" value="192.168.128.200" maxlength="15" size="15">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>İkincil Dns Ip</b></font></td>
-                            <td width="300" align=""><input type="text" name="DnsIp2" value="192.168.63.23" maxlength="15" size="15">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" height="5" align=""></td>
-                            <td width="180" height="5" align=""></td>
-                            <td width="300" height="5" align=""></td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 Tipi</b></font></td>
-                            <td width="300" align=""><select id="Ipv6Type" name="Ipv6Type" align="left" onchange="OnIPv6Type()">
-                                <option value="0" selected>Statik</option>
-                                <option value="1">Dhcp</option>
-                            </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 Adresi</b></font></td>
-                            <td width="300" align=""><input type="text" name="Ipv6Address" value="" maxlength="64" size="32">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 Önek Uzunluğu</b></font></td>
-                            <td width="300" align=""><input type="text" name="Ipv6Prefix" value="" maxlength="3" size="5">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 Gateway</b></font></td>
-                            <td width="300" align=""><input type="text" name="Ipv6Gateway" value="" maxlength="64" size="32">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 Dns Tipi</b></font></td>
-                            <td width="300" align=""><select id="Ipv6DnsType" name="Ipv6DnsType" align="left" onchange="OnIpv6DnsType()">
-                                <option value="0" selected>Statik</option>
-                                <option value="1">Dhcp</option>
-                            </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 Birincil Dns</b></font></td>
-                            <td width="300" align=""><input type="text" name="Ipv6DnsIp1" value="" maxlength="64" size="32">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>IPv6 İkincil Dns</b></font></td>
-                            <td width="300" align=""><input type="text" name="Ipv6DnsIp2" value="" maxlength="64" size="32">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" height="5" align=""></td>
-                            <td width="180" height="5" align=""></td>
-                            <td width="300" height="5" align=""></td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Vlan</b></font></td>
-                            <td width="300" align=""><select id="VlanEnable" name="VlanEnable" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
-                            </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Vlan Id</b></font></td>
-                            <td width="300" align=""><input type="text" name="VlanId" value="0" maxlength="4" size="5">
-                                <font face=Arial size=2 color=#0080C0><i>(0 - 4094)</i></font></td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Vlan Öncelik</b></font></td>
-                            <td width="300" align=""><input type="text" name="VlanPriority" value="0" maxlength="1" size="5">
-                                <font face=Arial size=2 color=#0080C0><i>(0 - 7)</i></font></td>
-                        </tr>
-                        <tr>
-                            <td width="10" height="5" align=""></td>
-                            <td width="180" height="5" align=""></td>
-                            <td width="300" height="5" align=""></td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>RTP QoS</b></font></td>
-                            <td width="300" align=""><input type="text" name="RtpQoS" value="0" maxlength="2" size="5">
-                                <font face=Arial size=2 color=#0080C0><i>(0 - 63)</i></font></td>
-                        </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>SIP QoS</b></font></td>
-                            <td width="300" align=""><input type="text" name="SipQoS" value="0" maxlength="2" size="5">
-                                <font face=Arial size=2 color=#0080C0><i>(0 - 63)</i></font></td>
-                        </tr>
-                    </table></td></tr></table>
-                <br>
-                <input type="submit" name="save" value="Kaydet">
-            </form>
+    </div>
+    <div class="frame">
+        <form method="POST" enctype="application/x-www-form-urlencoded" action="networksettings">
+            <table>
+                <caption class="caption"> Network Settings</caption>
+                <td class="label"><b>IP Type</b></td>
+                <td class="value"><select id="iptyppe" name="iptype" align="left" onchange="">
+                    <option value="0" selected>Static</option>
+                    <option value="1">DHCP</option>
+                </select>
+                </td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Ip</b></td>
+                    <td class="value"><input type="text" name="Ip" value="192.168.184.119" maxlength="15" size="15" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Netmask</b></td>
+                    <td class="value"><input type="text" name="Netmask" value="255.255.192.0" maxlength="15" size="15" readonly>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label" ><b>Gateway</b></td>
+                    <td class="value"><input type="text" name="Gateway" value="192.168.128.200" maxlength="15" size="15" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Dns Tipi</b></td>
+                    <td class="value"><select id="DnsType" name="DnsType" align="left" onchange="OnDnsType()">
+                        <option value="0" selected>Static</option>
+                        <option value="1">DHCP</option>
+                    </select>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"> <b>Primary DNS IP</b></td>
+                    <td class="value"><input type="text" name="DnsIp1" value="192.168.128.200" maxlength="15" size="15" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"> <b>Secondary DNS IP</b></td>
+                    <td class="value"><input type="text" name="DnsIp2" value="192.168.63.23" maxlength="15" size="15" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><b>Vlan</b></td>
+                    <td class="value"><select id="VlanEnable" name="VlanEnable" align="left" onchange="">
+                        <option value="0" selected>Disabled</option>
+                        <option value="1">Enabled</option>
+                    </select>
+                    </td>
+                <tr>
+                    <td class="label"><b>Vlan Id</b></td>
+                    <td class="value"><input type="text" name="VlanId" value="0" maxlength="4" size="5">
+                        <td class="value" face=Arial size=2 color=#0080C0><i>(0 - 4094)</i></td></td>
+            </tr>
+                <tr>
+                    <td class="label"><b>Vlan Priority</b></td>
+                    <td class="value"><input type="text" name="VlanPriority" value="0" maxlength="1" size="5">
+                    <td class="value" ><i>(0 - 7)</i></td></td>
+                </tr>
+                <tr>
+                    <td class="label"><b>RTP QoS</b></td>
+                    <td class="value"><input type="text" name="RtpQoS" value="0" maxlength="2" size="5">
+                        <td class="value"><i>(0 - 63)</i></td></td>
+                </tr>
+                <tr>
+                    <td class="label"><b>SIP QoS</b></td>
+                    <td class="value"><input type="text" name="SipQoS" value="0" maxlength="2" size="5">
+                        <td class="value"><i>(0 - 63)</i></td></td>
+                </tr>
+
+                </tr>
+            </table></td></tr></table>
+            <br>
+            <input type="submit" name="save" value="Save">
+        </form>
         </td>
-    </tr>
-</table>
-<hr align="left" width="672" noshade color="#000000"/>
+        </tr>
+        </table>
+    </div>
+
+</div>
+</div>
 <script type="text/javascript">
     function OnIPType()
     {
