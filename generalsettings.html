@@ -2,13 +2,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603</title>
-    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/General.css" />
     <link rel="stylesheet" href="css/mainmenu.css" />
     <link rel="stylesheet" href="css/generalsettings.css" />
     <link rel="stylesheet" href="css/menu.css" />
 </head>
-
-<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
@@ -22,94 +21,87 @@
         <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
     </ul>
 </div>
-<ul class="menu">
-    <li class="header">
-        Settings
-        <ul>
+<div class="footer">
+    <div class="container">
+    </div>
+</div>
+<div class="content">
+    <div class="sidebar">
+        <ul class="menu">
             <li><a href="generalsettings.html">General Settings</a></li>
             <li><a href="networksettings.html">Network Settings</a></li>
-            <li><a href="sipsettings.html">Sip Settings</a></li>
+            <li><a href="sipsettings.html">SIP Settings</a></li>
             <li><a href="callsettings.html">Call Settings</a></li>
             <li><a href="codecsettings.html">Codec Settings</a></li>
             <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
             <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
             <li><a href="gainsettings.html">Gain Settings</a></li>
-            <li><a href="systemsettings.html">System Settings</a></li>
+            <li><a href="systeminfo.html">System Settings</a></li>
             <li><a href="timesettings.html">Time Settings</a></li>
             <li><a href="securitysettings.html">Security Settings</a></li>
-            <li><a href="keyprogram.html">Key Programming</a></li>
+            <li><a href="keyprogram.html">Key Programming Settings</a></li>
             <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
         </ul>
-    </li>
- <div class="generalsettings">
-
-
-        <td width="2" bgcolor="#000000" ></td>
-        <td width="508" valign="top" align="right" >
-            <font face="Arial" size="2"><i><b>General Settings</b></i></font>
+    </div>
+    <div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="generalsettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Language</b></font></td>
-                        <td width="300" align=""><select id="language" name="language" align="left" onchange="">
+                <table>
+                       <caption class="caption"> General Settings</caption>
+                        <td class="label"><b>Language</b></td>
+                        <td class="value"><select id="language" name="language" align="left" onchange="">
                             <option value="0" selected>English</option>
                             <option value="1">Turkish</option>
                         </select>
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Do not disturb</b></font></td>
-                            <td width="300" align=""><select id="Dnd" name="Dnd" align="left" onchange="">
+                            <td class="label"><b>Do not disturb</b></td>
+                            <td class="value"><select id="Dnd" name="Dnd" align="left" onchange="">
                                 <option value="0" selected>Disabled</option>
                                 <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Silence Mode</b></font></td>
-                            <td width="300" align=""><select id="Mute" name="Mute" align="left" onchange="">
+                            <td class="label"><b>Silence Mode</b></td>
+                            <td class="label"><select id="Mute" name="Mute" align="left" onchange="">
                                 <option value="0" selected>Disabled</option>
                                 <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Headphones</b></font></td>
-                            <td width="300" align=""><select id="Headset" name="Headset" align="left" onchange="">
+                            <td class="label"><b>Headphones</b></td>
+
+                            <td class="value"><select id="Headset" name="Headset" align="left" onchange="">
                                 <option value="0" selected>Disabled</option>
                                 <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Notification on Busy</b></font></td>
-                            <td width="300" align=""><select id="BusyWarning" name="BusyWarning" align="left" onchange="">
+                            <td class="label"><b>Notification on Busy</b></td>
+                            <td class="value"><select id="BusyWarning" name="BusyWarning" align="left" onchange="">
                                 <option value="0" selected>Disabled</option>
                                 <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Name on Screen</b></font></td>
-                            <td width="300" align="left"><input type="text" name="screenDisplayName" value="KAREL" maxlength="63" size="32">
+                            <td class="label"><b>Name on screen</b></td>
+                            <td class="value"><input type="text" name="screenDisplayName" value="KAREL" maxlength="63" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Opening Message</b></font></td>
-                            <td width="300" align="left"><input type="text" name="startUpMessage" value="" maxlength="99" size="32">
+                            <td class="label"><b>Opening message</b></td>
+                            <td class="value"><input type="text" name="startUpMessage" value="Hello World!" maxlength="99" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Transfer type</b></font></td>
-                            <td width="300" align=""><select id="transferType" name="transferType" align="left" onchange="">
+                            <td class="label"><b>Transfer Type</b></td>
+                            <td class="value"><select id="transferType" name="transferType" align="left" onchange="">
                                 <option value="0" selected>Elective Transfer</option>
                                 <option value="1">Direct Transfer</option>
                             </select>
@@ -117,15 +109,17 @@
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input class="save" type="submit" name="save" value="Save">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
-    </tr>
-</table>
- </div>
-<div class="footer">
-    <div class="container">
+        </tr>
+        </table>
+    </div>
+
     </div>
 </div>
 </body>
 </html>
+
+
+
