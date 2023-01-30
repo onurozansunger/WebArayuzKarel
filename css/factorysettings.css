@@ -1,3 +1,12 @@
+.sidebar {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    width: 125px;
+    padding: 20px;
+}
+
+
 .frame {
     display: flex;
     justify-content: center;
@@ -60,6 +69,11 @@
 .navbar-nav button {
     z-index: 100000;
 }
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
 
 .sidebar {
     position: fixed;
