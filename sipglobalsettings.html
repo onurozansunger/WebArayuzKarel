@@ -1,0 +1,225 @@
+<html>
+<head>
+    <title>KAREL IPK-603</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <style type="text/css">
+        <!--
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        -->
+    </style>
+    <script LANGUAGE="JavaScript">
+        function OnNatType()
+        {
+            var change_id;
+            change_id = document.form1.Nat.value;
+            switch(change_id)
+            {
+                case "0":
+                    document.form1.NatIp.disabled = 1;
+                    document.form1.StunUri.disabled = 1;
+                    document.form1.StunPort.disabled = 1;
+                    break;
+                case "1":
+                    document.form1.NatIp.disabled = 0;
+                    document.form1.StunUri.disabled = 1;
+                    document.form1.StunPort.disabled = 1;
+                    break;
+                case "2":
+                    document.form1.NatIp.disabled = 1;
+                    document.form1.StunUri.disabled = 0;
+                    document.form1.StunPort.disabled = 0;
+                    break;
+                default:
+                    break;
+            }
+        }
+        function load_value()
+        {
+            OnNatType();
+        }
+    </script>
+
+</head>
+<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="load_value()">
+<img src="image.jpg" width="542" height="156" alt="" border="0" align="" />
+<hr size="2" align="left" width="672" noshade color="#000000" />
+<table border="0"  width="672" cellpadding="0" cellspacing="0">
+    <tr >
+        <td width="162" valign="top">
+            <br />
+            <br />
+            <a href="systeminfo.html"><font face="Arial" size="2"><b>Sistem Bilgisi</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            <font face="Arial" size="2"><b>Ayarlar</b></font>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="generalsettings.html"><font face="Arial" size="2"><b>Genel Ayarlar</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networksettings.html"><font face="Arial" size="2"><b>Ağ Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sipsettings.html"><font face="Arial" size="2"><b>Sip Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="callsettings.html"><font face="Arial" size="2"><b>Arama Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="codecsettings.html"><font face="Arial" size="2"><b>Kodek Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ringtonesettings.html"><font face="Arial" size="2"><b>Zil Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keypadtonesettings.html"><font face="Arial" size="2"><b>Tuş Sesi Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gainsettings.html"><font face="Arial" size="2"><b>Ses Seviye Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="systemsettings.html"><font face="Arial" size="2"><b>Sistem Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="timesettings.html"><font face="Arial" size="2"><b>Tarih Saat Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="securitysettings.html"><font face="Arial" size="2"><b>Güvenlik Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="keyprogram.html"><font face="Arial" size="2"><b>Tuş Programlama</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ldapsettings.html"><font face="Arial" size="2"><b>LDAP Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            <a href="phonebook.html"><font face="Arial" size="2"><b>Telefon Defteri</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            <font face="Arial" size="2"><b>Teknik Destek</b></font>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="factorysettings.html"><font face="Arial" size="2"><b>Fabrika Ayarları</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="fileupload.html"><font face="Arial" size="2"><b>Dosya Yükle</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="filedownload.html"><font face="Arial" size="2"><b>Dosya İndir</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="firmwareupdate.html"><font face="Arial" size="2"><b>Yazılım Güncelle</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="networklog.html"><font face="Arial" size="2"><b>Paket Log</b></font></a>
+            <hr size="1" align="left" width="160" noshade color="#000000" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.karel.com.tr" target="_blank"><font face="Arial" size="2"><b>Karel Anasayfa</b></font></a>
+        </td>
+        <td width="2" bgcolor="#000000" ></td>
+        <td width="508" valign="top" align="right" >
+            <font face="Arial" size="2"><i><b>Sip Ayarları</b></i></font>
+            <hr align="right" width="498" noshade color="#000000" />
+            <table width="498">
+                <tr>
+                    <td align="left">
+                        <a href="sipglobalsettings.html"><font face="Arial" size="2"><b>Global Ayarlar</b></font></a>
+                    </td>
+                    <td align="right">
+                        <a href="sipaccountsettings.html"><font face="Arial" size="2"><b>Hesap Ayarları</b></font></a>
+                    </td>
+                </tr>
+            </table>
+            <form method="POST" id= 0 name="form1" enctype="application/x-www-form-urlencoded" action="sipglobalsettings">
+                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
+                    <tr><td><table><tr>
+                        <td width="10" align=""></td>
+                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Sip Port</b></font></td>
+                        <td width="300" align=""><input type="text" name="SipPort" value="5080" maxlength="5" size="15">
+                            <font face=Arial size=2 color=#0080C0><i>(1024 - 65535)</i></font></td>
+                    </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Rtp Port</b></font></td>
+                            <td width="300" align=""><input type="text" name="RtpPort" value="4000" maxlength="5" size="15">
+                                <font face=Arial size=2 color=#0080C0><i>(1024 - 65535)</i></font></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Canlı Tut</b></font></td>
+                            <td width="300" align=""><input type="text" name="KeepAlive" value="60" maxlength="5" size="15">
+                                <font face=Arial size=2 color=#0080C0><i>(1 - 65535)</i></font></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>NAT</b></font></td>
+                            <td width="300" align=""><select id="Nat" name="Nat" align="left" onchange="OnNatType()">
+                                <option value="0" selected>Devre Dışı</option>
+                                <option value="1">NAT Ip</option>
+                                <option value="2">STUN Sunucu</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>NAT Ip</b></font></td>
+                            <td width="300" align=""><input type="text" name="NatIp" value="" maxlength="15" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>STUN Sunucu</b></font></td>
+                            <td width="300" align=""><input type="text" name="StunUri" value="" maxlength="127" size="32">
+                                <font face=Arial size=2 color=#0080C0><i>(Ip veya Uri)</i></font></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>STUN Port</b></font></td>
+                            <td width="300" align=""><input type="text" name="StunPort" value="3478" maxlength="5" size="15">
+                                <font face=Arial size=2 color=#0080C0><i>(1 - 65535)</i></font></td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Varsayılan Hesap</b></font></td>
+                            <td width="300" align=""><select id="DefaultAccount" name="DefaultAccount" align="left" onchange="">
+                                <option value="0" selected>Hesap 1</option>
+                                <option value="1">Hesap 2</option>
+                                <option value="2">Hesap 3</option>
+                                <option value="3">Hesap 4</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>PRACK</b></font></td>
+                            <td width="300" align=""><select id="Prack" name="Prack" align="left" onchange="">
+                                <option value="0">Devre dışı</option>
+                                <option value="1" selected>Etkin</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Oturum Aralığı</b></font></td>
+                            <td width="300" align=""><input type="text" name="SessionInterval" value="300" maxlength="5" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>MinSE</b></font></td>
+                            <td width="300" align=""><input type="text" name="MinSE" value="90" maxlength="5" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>PUBLISH Aralığı</b></font></td>
+                            <td width="300" align=""><input type="text" name="PublishInterval" value="60" maxlength="4" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Minimum PUBLISH Aralığı</b></font></td>
+                            <td width="300" align=""><input type="text" name="PublishMinInterval" value="60" maxlength="4" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>SUBSCRIBE Aralığı</b></font></td>
+                            <td width="300" align=""><input type="text" name="SubscribeInterval" value="60" maxlength="4" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="10" align=""></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Minimum SUBSCRIBE Aralığı</b></font></td>
+                            <td width="300" align=""><input type="text" name="SubscribeMinInterval" value="60" maxlength="4" size="15">
+                            </td>
+                        </tr>
+                    </table></td></tr></table>
+                <br>
+                <input type="submit" name="save" value="Kaydet">
+            </form>
+        </td>
+    </tr>
+</table>
+<hr align="left" width="672" noshade color="#000000"/>
+</body>
+</html>
