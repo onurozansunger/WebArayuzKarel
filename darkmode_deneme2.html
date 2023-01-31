@@ -1,35 +1,56 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-
-        #color-select option[value="white"] {
-            background-color: #ffffff;
-        }
-
-        #color-select option[value="#2c2c2c"] {
-            background-color: #2c2c2c;
-        }
-
-        #color-select option[value="#00aeef"] {
-            background-color: #00aeef;
-        }
-
-        #color-select option[value="#F78F1EFF"] {
-            background-color: #F78F1EFF;
-        }
-
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KAREL IPK-603</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/mainmenu.css" />
+    <link rel="stylesheet" href="css/systeminfo.css" />
+    <link rel="stylesheet" href="css/menu.css" />
 </head>
-<body>
-<select id="color-select">
+
+<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<div class="navbar">
+    <div class="container">
+        <img class="logo" src="assets/logo.png" />
+    </div>
+</div>
+<div class="mainmenuframe">
+    <ul class="mainmenu">
+        <li><a class="mainheader" href="systeminfo.html">System Information</a></li>
+        <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+        <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+        <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="container">
+    </div>
+</div>
+<select id="color-select" style="position: absolute; right: 10px; top: 10px;">
     <option value="#ffffff">White</option>
     <option value="#2c2c2c">Dark</option>
     <option value="#00aeef">Karel Blue</option>
     <option value="#F78F1EFF">Karel Orange</option>
 </select>
+<style>
 
+    #color-select option[value="white"] {
+        background-color: #ffffff;
+    }
+
+    #color-select option[value="#2c2c2c"] {
+        background-color: #2c2c2c;
+    }
+
+    #color-select option[value="#00aeef"] {
+        background-color: #00aeef;
+    }
+
+    #color-select option[value="#F78F1EFF"] {
+        background-color: #F78F1EFF;
+    }
+
+</style>
 <script>
     const select = document.querySelector("#color-select");
 
