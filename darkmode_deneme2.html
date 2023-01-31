@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #color-select {
+            background-color: white;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #color-select option[value="white"] {
+            background-color: #ffffff;
+        }
+
+        #color-select option[value="#2c2c2c"] {
+            background-color: #2c2c2c;
+        }
+
+        #color-select option[value="#00aeef"] {
+            background-color: #00aeef;
+        }
+
+        #color-select option[value="#F78F1EFF"] {
+            background-color: #F78F1EFF;
+        }
+
+
+    </style>
+</head>
+<body>
+<select id="color-select">
+    <option value="#ffffff">White</option>
+    <option value="#2c2c2c">Dark</option>
+    <option value="#00aeef">Karel Blue</option>
+    <option value="#F78F1EFF">Karel Orange</option>
+</select>
+
+<script>
+    const select = document.querySelector("#color-select");
+
+    select.addEventListener("change", function() {
+        document.body.style.backgroundColor = select.value;
+    });
+</script>
+</body>
+</html>
