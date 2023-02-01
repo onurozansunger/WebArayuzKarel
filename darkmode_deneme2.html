@@ -16,10 +16,10 @@
 </div>
 <div class="mainmenuframe">
     <ul class="mainmenu">
-        <li><a class="mainheader" href="systeminfo.html">System Information</a></li>
-        <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
-        <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
-        <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+        <li class="li"> <a class="mainheader" href="systeminfo.html">System Information</a></li>
+        <li class="li"> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+        <li class="li"> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+        <li class="li"> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
     </ul>
 </div>
 <div class="footer">
@@ -65,13 +65,22 @@
 </style>
 <script>
     const select = document.querySelector("#color-select");
+    const collection = document.getElementsByClassName("mainheader");
+    const collection2 = document.getElementsByClassName("li");
+    console.log(collection);
     select.addEventListener("change", function() {
         document.body.style.backgroundColor = select.value;
         document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
-        document.querySelector(".mainmenu li").style.backgroundColor = select.value;
 
+        collection[0].style.backgroundColor = select.value;
+        collection[1].style.backgroundColor = select.value;
+        collection[2].style.backgroundColor = select.value;
+        collection[3].style.backgroundColor = select.value;
 
-
+        collection2[0].style.backgroundColor = select.value;
+        collection2[1].style.backgroundColor = select.value;
+        collection2[2].style.backgroundColor = select.value;
+        collection2[3].style.backgroundColor = select.value;
     });
 </script>
 </body>
