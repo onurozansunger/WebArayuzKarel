@@ -26,6 +26,7 @@ collection2[3].style.backgroundColor = select.value;
 collection2[4].style.backgroundColor = select.value;
 
 
+
 // Checkbox a göre değiştir
 select.addEventListener("change", function() {
     document.body.style.backgroundColor = select.value;
