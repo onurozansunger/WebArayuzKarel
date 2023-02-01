@@ -4,7 +4,6 @@
     <title>KAREL IPK-603</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/mainmenu.css" />
-    <link rel="stylesheet" href="css/callsettings.css" />
     <link rel="stylesheet" href="css/menu.css" />
 </head>
 
@@ -17,6 +16,7 @@
 <div class="mainmenuframe">
     <ul class="mainmenu">
         <li><a class="mainheader" href="systeminfo.html">System Information</a></li>
+        <li><a class="mainheader" href="sipaccountsettings.html">SIP</a></li>
         <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
         <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
         <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
@@ -26,72 +26,81 @@
     <div class="container">
     </div>
 </div>
-<td width="2" bgcolor="#000000" ></td>
-        <td width="508" valign="top" align="right" >
-            <font face="Arial" size="2"><i><b>Arama Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+<div class="content">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="generalsettings.html">General Settings</a></li>
+            <li><a href="networksettings.html">Network Settings</a></li>
+            <li><a href="callsettings.html">Call Settings</a></li>
+            <li><a href="codecsettings.html">Codec Settings</a></li>
+            <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+            <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+            <li><a href="gainsettings.html">Gain Settings</a></li>
+            <li><a href="systeminfo.html">System Settings</a></li>
+            <li><a href="timesettings.html">Time Settings</a></li>
+            <li><a href="securitysettings.html">Security Settings</a></li>
+            <li><a href="keyprogram.html">Key Programming Settings</a></li>
+            <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+        </ul>
+    </div>
+    <div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="callsettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Arama Bekletme</b></font></td>
-                        <td width="300" align=""><input type="checkbox" name="callWaiting" value="" checked>
+                <table>
+                     <caption class="caption">Call Settings</caption>
+                        <td class="label"><b>Call Holding</b></td>
+                        <td class="value"><input type="checkbox" name="callWaiting" value="" checked>
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Otomatik Cevaplama</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="autoAnswer" value="">
+                            <td class="label"><b>Auto Answering</b></td>
+                            <td class="value"><input type="checkbox" name="autoAnswer" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Otomatik Cevaplama Süresi</b></font></td>
-                            <td width="300" align=""><input type="text" name="autoAnswerTimeout" value="5" maxlength="5" size="5">
-                                <font face="Arial" size="2" color=#0080C0><i>( 1 - 30 )</i></font></td>
+                            <td class="label"><b>Auto Answer Timeout</b></font></td>
+                            <td class="value"><input type="text" name="autoAnswerTimeout" value="5" maxlength="5" size="5">
+                                <td class="information"><i>( 1 - 30 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Tuş Bekleme Süresi</b></font></td>
-                            <td width="300" align=""><input type="text" name="interdigitTimeout" value="" maxlength="2" size="5">
-                                <font face="Arial" size="2" color=#0080C0><i>( 1 - 10 )</i></font></td>
+                            <td class="label"><b>Interdigit Timeou</b></font></td>
+                            <td class="value"><input type="text" name="interdigitTimeout" value="" maxlength="2" size="5">
+                                <td class="information"><i>( 1 - 10 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Acil Hat</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="hotLineEnable" value="">
+                            <td class="label"><b>Emergency Line</b></font></td>
+                            <td class="value"><input type="checkbox" name="hotLineEnable" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Acil Hat Zaman Aşımı</b></font></td>
-                            <td width="300" align=""><input type="text" name="hotLineTimeout" value="0" maxlength="2" size="5">
-                                <font face="Arial" size="2" color=#0080C0><i>( 0 - 10 )</i></font></td>
+                            <td class="label"><b>Emergency Line Timeout</b></font></td>
+                            <td class="value"><input type="text" name="hotLineTimeout" value="0" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 10 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Acil Hat Numarası</b></font></td>
-                            <td width="300" align=""><input type="text" name="hotLineNumber" value="" maxlength="127" size="20">
+                            <td class="label"><b>Emergency Line number</b></font></td>
+                            <td class="value"><input type="text" name="hotLineNumber" value="" maxlength="127" size="20">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Acil Hat Hesap</b></font></td>
-                            <td width="300" align=""><select id="hotLineAccount" name="hotLineAccount" align="left" onchange="">
-                                <option value="0" selected>Hesap 1</option>
-                                <option value="1">Hesap 2</option>
-                                <option value="2">Hesap 3</option>
-                                <option value="3">Hesap 4</option>
+                            <td class="label"><b>Emergency Line Number</b></font></td>
+                            <td class="value"><select id="hotLineAccount" name="hotLineAccount" align="left" onchange="">
+                                <option value="0" selected>Account 1</option>
+                                <option value="1">Account 2</option>
+                                <option value="2">Account 3</option>
+                                <option value="3">Account 4</option>
                             </select>
                             </td>
                         </tr>
-                    </table></td></tr></table>
+                    </table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+    </div>
+</div>
 </body>
 </html>
