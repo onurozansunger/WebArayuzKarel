@@ -12,8 +12,6 @@ const select = document.querySelector("#color-select");
 
     document.body.style.backgroundColor = select.value;
     document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
-    <!--document.querySelector(".navbar").style.backgroundColor = select.value;
-     document.querySelector(".frame").style.backgroundColor = select.value;-->
 
     collection[0].style.backgroundColor = select.value;
     collection[1].style.backgroundColor = select.value;
@@ -33,8 +31,6 @@ const select = document.querySelector("#color-select");
     select.addEventListener("change", function() {
     document.body.style.backgroundColor = select.value;
     document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
-    <!--document.querySelector(".navbar").style.backgroundColor = select.value;
- document.querySelector(".frame").style.backgroundColor = select.value;-->
 
     collection[0].style.backgroundColor = select.value;
     collection[1].style.backgroundColor = select.value;
@@ -48,3 +44,7 @@ const select = document.querySelector("#color-select");
     collection2[3].style.backgroundColor = select.value;
     collection2[4].style.backgroundColor = select.value;
 });
+
+
+<!--document.querySelector(".navbar").style.backgroundColor = select.value;
+ document.querySelector(".frame").style.backgroundColor = select.value;-->
