@@ -1,12 +1,14 @@
+
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/mainmenu.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/phonebook.css" />
 </head>
-<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+
+<body bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
@@ -14,11 +16,11 @@
 </div>
 <div class="mainmenuframe">
     <ul class="mainmenu">
-        <li class="li"> <a class="mainheader" href="systeminfo.html">System Information</a></li>
-        <li class="li"> <a class="mainheader" href="sipaccountsettings.html">SIP</a></li>
-        <li class="li"> <a class="mainheader" href="generalsettings.html">Settings</a></li>
-        <li class="li"> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
-        <li class="li"> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+        <li><a class="mainheader" href="systeminfo.html">System Information</a></li>
+        <li><a class="mainheader" href="sipaccountsettings.html">SIP</a></li>
+        <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+        <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+        <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
     </ul>
 </div>
 <div class="footer">
@@ -26,19 +28,19 @@
     </div>
 </div>
 </body>
-            <font face="Arial" size="2"><i><b>Telefon Defteri</b></i></font>
-            <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                <tr><td align=right><table><tr>
-                    <td width="20" align="center"></td>
-                    <td width="150" align="center"><font face="Arial" size="2" color="#0080C0"><b>İsim</b></font></td>
-                    <td width="150" align="center"><font face="Arial" size="2" color="#0080C0"><b>Numara</b></font></td>
-                    <td width="150" align="center"><font face="Arial" size="2" color="#0080C0"><b>Profil</b></font></td>
-                    <td width="20" align="center"></td>
+</html>
+            <div class="frame">
+            <table>
+                    <caption class="caption">Phone Book</caption>
+                    <td class="label"><b>Name</b></td>
+                    <td class="value"><input type="text" name="phonebookName" value="" maxlength="63" size="20"></td>
+                    <td class="label"><b>Number</b></td>
+                    <td class="label"><b>Profile</b></td>
                 </tr>
                     <form name="form1" method="POST" enctype="application/x-www-form-urlencoded" action="phonebookadd">
                         <tr>
                             <td width="20" align="center"></td>
-                            <td width="120" align="center"><input type="text" name="phonebookName" value="" maxlength="63" size="20"></td>
+
                             <td width="120" align="center"><input type="text" name="phonebookNo" value="" maxlength="63" size="20"></td>
                             <td width="120" align="center"><select id="Account" name="Account" align="left" onchange="">
                                 <option value="0" selected>Hesap 1</option>
@@ -63,6 +65,7 @@
         </td>
     </tr>
 </table>
+            </div>
 <script LANGUAGE="JavaScript">
     function confirmSubmit()
     {
