@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/mainmenu.css" />
     <link rel="stylesheet" href="css/menu.css" />
 </head>
-<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<body>
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
@@ -25,66 +25,78 @@
     <div class="container">
     </div>
 </div>
+<div class="sidebar">
+    <ul class="menu">
+        <li><a href="generalsettings.html">General Settings</a></li>
+        <li><a href="networksettings.html">Network Settings</a></li>
+        <li><a href="callsettings.html">Call Settings</a></li>
+        <li><a href="codecsettings.html">Codec Settings</a></li>
+        <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+        <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+        <li><a href="gainsettings.html">Gain Settings</a></li>
+        <li><a href="systemsettings.html">System Settings</a></li>
+        <li><a href="timesettings.html">Time Settings</a></li>
+        <li><a href="securitysettings.html">Security Settings</a></li>
+        <li><a href="keyprogram.html">Key Programming Settings</a></li>
+        <li><a href="ldapsettings.html">LDAP Settings</a></li>
 
-            <font face="Arial" size="2"><i><b>Tuş Programlama</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+
+    </ul>
+</div>
+            <div class="frame">
             <form method="POST" name="form1" enctype="application/x-www-form-urlencoded" action="keyprogramsettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="100" align="right"><font face="Arial" size="2" color="#0080C0"><b>Tuş</b></font></td>
-                        <td width="380" align=""><select id="Key" name="Key" align="left" onchange="ProgramLoad()">
-                            <option value="0" selected>Programlanabilir Tuş 1</option>
-                            <option value="1">Programlanabilir Tuş 2</option>
-                            <option value="2">Programlanabilir Tuş 3</option>
-                            <option value="3">Programlanabilir Tuş 4</option>
+                <table>
+                        <caption class="caption">Key Programming Settings</caption>
+                        <td class="label"><b>Key</b></td>
+                        <td class="value"><select id="Key" name="Key" align="left" onchange="ProgramLoad()">
+                            <option value="0" selected>Programmable Key 1</option>
+                            <option value="1">Programmable Key 2</option>
+                            <option value="2">Programmable Key 3</option>
+                            <option value="3">Programmable Key 4</option>
                         </select>
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="100" align="right"><font face="Arial" size="2" color="#0080C0"><b>Program Tipi</b></font></td>
-                            <td width="380" align=""><select id="ProgramType" name="ProgramType" align="left" onchange="SetProgramType()">
-                                <option value="0" selected>Birincil</option>
-                                <option value="1">İkincil</option>
+                            <td class="label"><b>Programe Type</b></td>
+                            <td class="value"><select id="ProgramType" name="ProgramType" align="left" onchange="SetProgramType()">
+                                <option value="0" selected>Primary</option>
+                                <option value="1">Secondary</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="100" align="right"><font face="Arial" size="2" color="#0080C0"><b>Program</b></font></td>
-                            <td width="380" align=""><select name="KeyOperationType" align="left" onchange="SetKeyProgram()">
-                                <option value="0">Programlı Değil</option>
-                                <option value="1">Hızlı Arama</option>
+                            <td class="label"><b>Programe</b></td>
+                            <td class="value"><select name="KeyOperationType" align="left" onchange="SetKeyProgram()">
+                                <option value="0">Not Programmed</option>
+                                <option value="1">Fast Call</option>
                                 <option value="2">Park</option>
-                                <option value="3">Sıra</option>
-                                <option value="4">Servis</option>
-                                <option value="5" selected>Menü</option>
-                                <option value="6">Hesap</option>
+                                <option value="3">Row</option>
+                                <option value="4">Service</option>
+                                <option value="5" selected>Menu</option>
+                                <option value="6">Account</option>
                                 <option value="7">BLA</option>
-                                <option value="8">Çağrı İşleme Tuşu</option>
+                                <option value="8">Call Processing Key</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="100" align="right"><font face="Arial" size="2" color="#0080C0"><b>Menü</b></font></td>
-                            <td width="380" align=""><select name="KeyOperationMenu" align="left" onchange="">
-                                <option value="0" selected>Telefon Defteri</option>
-                                <option value="1">Arama Kayıtları</option>
-                                <option value="2">Mesajlar</option>
-                                <option value="3">Sistem Ayarları</option>
-                                <option value="4">Genel Ayarlar</option>
-                                <option value="5">Ağ Ayarları</option>
-                                <option value="6">Arama Ayarları</option>
-                                <option value="7">Kodek Ayarları</option>
-                                <option value="8">Ekran Ayarları</option>
-                                <option value="9">Zil Ayarları</option>
-                                <option value="10">Tarih Saat Ayarları</option>
-                                <option value="11">Tuş Programlama</option>
-                                <option value="12">Güvenlik Ayarları</option>
+                            <td class="label"><b>Menu</b></td>
+                            <td class="value"><select name="KeyOperationMenu" align="left" onchange="">
+                                <option value="0" selected>Phone Book</option>
+                                <option value="1">Call Logs</option>
+                                <option value="2">Messages</option>
+                                <option value="3">System Settings</option>
+                                <option value="4">General Settings</option>
+                                <option value="5">Network Settings</option>
+                                <option value="6">Call Settings</option>
+                                <option value="7">Codec Settings</option>
+                                <option value="8">Screen Settings</option>
+                                <option value="9">Ringtone Settings</option>
+                                <option value="10">Date Settings</option>
+                                <option value="11">Key Programming</option>
+                                <option value="12">Security Settings</option>
                                 <option value="13">Alarm</option>
-                                <option value="14">Sip Ayarları</option>
+                                <option value="14">SIP </option>
                             </select>
                             </td>
                         </tr>
@@ -98,12 +110,12 @@
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+            </div>
 
 
 

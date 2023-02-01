@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/mainmenu.css" />
     <link rel="stylesheet" href="css/menu.css" />
 </head>
-<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<body>
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
@@ -25,26 +25,41 @@
     <div class="container">
     </div>
 </div>
-            <font face="Arial" size="2"><i><b>Sistem Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+<div class="sidebar">
+    <ul class="menu">
+        <li><a href="generalsettings.html">General Settings</a></li>
+        <li><a href="networksettings.html">Network Settings</a></li>
+        <li><a href="callsettings.html">Call Settings</a></li>
+        <li><a href="codecsettings.html">Codec Settings</a></li>
+        <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+        <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+        <li><a href="gainsettings.html">Gain Settings</a></li>
+        <li><a href="systemsettings.html">System Settings</a></li>
+        <li><a href="timesettings.html">Time Settings</a></li>
+        <li><a href="securitysettings.html">Security Settings</a></li>
+        <li><a href="keyprogram.html">Key Programming Settings</a></li>
+        <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+    </ul>
+</div>
+
+<div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="systemsettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Web Şifresi</b></font></td>
-                        <td width="300" align=""><input type="password" name="Password" value="123456" maxlength="23" size="15">
+                <table>
+                    <caption class="caption">System Settings</caption>
+                        <td class="label"><b>WEB Password</b></td>
+                        <td class="value"><input type="password" name="Password" value="123456" maxlength="23" size="15">
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Tftp Sunucu</b></font></td>
-                            <td width="300" align="left"><input type="checkbox" name="TftpServer" value="">
+                            <td class="label"><b>TFTP Server</b></td>
+                            <td class="value"><input type="checkbox" name="TftpServer" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Log Seviyesi</b></font></td>
-                            <td width="300" align=""><select id="LogLevel" name="LogLevel" align="left" onchange="">
+                            <td class="label"><b>Log Level</b></td>
+                            <td class="value"><select id="LogLevel" name="LogLevel" align="left" onchange="">
                                 <option value="0" selected>DEBUG</option>
                                 <option value="1">INFO</option>
                                 <option value="2">WARNING</option>
@@ -53,124 +68,110 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Log Sunucusu</b></font></td>
-                            <td width="300" align=""><select id="LogServer" name="LogServer" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
+                            <td class="label"><b>Log Level</b></td>
+                            <td class="value"><select id="LogServer" name="LogServer" align="left" onchange="">
+                                <option value="0" selected>Disabled</option>
+                                <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Log Sunucu Ip</b></font></td>
-                            <td width="300" align=""><input type="text" name="LogServerIp" value="" maxlength="15" size="15">
+                            <td class="label"><b>Log Server IP</b></td>
+                            <td CLASS="value"><input type="text" name="LogServerIp" value="" maxlength="15" size="15">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Log Sunucu Port</b></font></td>
+                            <td class="label"><b>Log Server Port</b></td>
                             <td width="300" align=""><input type="text" name="LogServerPort" value="" maxlength="5" size="5">
-                                <font face=Arial size=2 color=#0080C0><i>(1 - 65535)</i></font></td>
+                                <td class="information"><i>(1 - 65535)</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Log Konsol</b></font></td>
-                            <td width="300" align=""><select id="LogConsole" name="LogConsole" align="left" onchange="">
-                                <option value="0">Devre Dışı</option>
-                                <option value="1" selected>Etkin</option>
+                            <td class="label"><b>Log Console</b></td>
+                            <td class="value" ><select id="LogConsole" name="LogConsole" align="left" onchange="">
+                                <option value="0">Disabled</option>
+                                <option value="1" selected>Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Test Portu</b></font></td>
-                            <td width="300" align=""><input type="text" name="TestPort" value="0" maxlength="5" size="5">
+                            <td class="label"><b>Test Port</b></td>
+                            <td class="value"><input type="text" name="TestPort" value="0" maxlength="5" size="5">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Otomatik Güncelleme</b></font></td>
-                            <td width="300" align=""><select id="AutoprovisionEnable" name="AutoprovisionEnable" align="left" onchange="">
-                                <option value="0">Devre Dışı</option>
-                                <option value="1" selected>Etkin</option>
+                            <td class="label"><b>Auto Update</b></td>
+                            <td class="value"><select id="AutoprovisionEnable" name="AutoprovisionEnable" align="left" onchange="">
+                                <option value="0">Disabled</option>
+                                <option value="1" selected>Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Sunucu Tipi</b></font></td>
-                            <td width="300" align=""><select id="AutoprovisionServerType" name="AutoprovisionServerType" align="left" onchange="">
-                                <option value="0" selected>DHCP Tanımlı</option>
-                                <option value="1">Kullanıcı Tanımlı</option>
+                            <td class="label"><b>Server Type</b></td>
+                            <td class="value"><select id="AutoprovisionServerType" name="AutoprovisionServerType" align="left" onchange="">
+                                <option value="0" selected>DHCP defined</option>
+                                <option value="1">User defined</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Konfigürasyon Sunucusu</b></font></td>
-                            <td width="300" align=""><input type="text" name="AutoprovisionBootServer" value="" maxlength="127" size="20">
+                            <td class="label"><b>Configuration Server</b></td>
+                            <td class="value"><input type="text" name="AutoprovisionBootServer" value="" maxlength="127" size="20">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Boot Şifresi</b></font></td>
-                            <td width="300" align=""><input type="password" name="AutoprovisionBootPassword" value="" maxlength="127" size="20">
+                            <td class="label"><b>Boot Password</b></td>
+                            <td class="value"><input type="password" name="AutoprovisionBootPassword" value="" maxlength="127" size="20">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Konfigürasyon Şifresi</b></font></td>
-                            <td width="300" align=""><input type="password" name="AutoprovisionConfigurationPassword" value="658996653" maxlength="127" size="20">
+                            <td class="label"><b>Configuration Password</b></td>
+                            <td class="value"><input type="password" name="AutoprovisionConfigurationPassword" value="658996653" maxlength="127" size="20">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Dsp Log</b></font></td>
-                            <td width="300" align=""><select id="DspLogStatus" name="DspLogStatus" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
+                            <td class="label"><b>DSP Log</b></td>
+                            <td class="value"><select id="DspLogStatus" name="DspLogStatus" align="left" onchange="">
+                                <option value="0" selected>Disabled</option>
+                                <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Dsp Tdm Log</b></font></td>
-                            <td width="300" align=""><select id="DspTdmLogStatus" name="DspTdmLogStatus" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
+                            <td class="label"><b>DSP TDM Log</b></font></td>
+                            <td class="value"><select id="DspTdmLogStatus" name="DspTdmLogStatus" align="left" onchange="">
+                                <option value="0" selected>Disabled</option>
+                                <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Dsp Network Log</b></font></td>
+                            <td class="label"><b>DSP Network Log</b></font></td>
                             <td width="300" align=""><select id="DspNetworkLogStatus" name="DspNetworkLogStatus" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
+                                <option value="0" selected>Disabled</option>
+                                <option value="1">Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Dsp Log Sunucu</b></font></td>
-                            <td width="300" align=""><input type="text" name="DspLogServerIp" value="" maxlength="63" size="20">
+                            <td class="label"><b>DSP Log Server</b></font></td>
+                            <td class="value"><input type="text" name="DspLogServerIp" value="" maxlength="63" size="20">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Dsp Log Sunucu Port</b></font></td>
-                            <td width="300" align=""><input type="text" name="DspLogServerPort" value="0" maxlength="5" size="5">
+                            <td class="label"><b>DSP Log Server Port</b></font></td>
+                            <td class="value"><input type="text" name="DspLogServerPort" value="0" maxlength="5" size="5">
                             </td>
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="reset" value="Tekrar Başlat" onClick="return confirmSubmit();">
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="reset" value="Restart" onClick="return confirmSubmit();">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
+</div>
 <hr align="left" width="672" noshade color="#000000"/>
     <script LANGUAGE="JavaScript">
         function confirmSubmit()
