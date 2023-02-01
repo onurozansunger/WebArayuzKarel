@@ -25,41 +25,56 @@
     <div class="container">
     </div>
 </div>
-            <font face="Arial" size="2"><i><b>Tuş Sesi Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="generalsettings.html">General Settings</a></li>
+            <li><a href="networksettings.html">Network Settings</a></li>
+            <li><a href="callsettings.html">Call Settings</a></li>
+            <li><a href="codecsettings.html">Codec Settings</a></li>
+            <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+            <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+            <li><a href="gainsettings.html">Gain Settings</a></li>
+            <li><a href="systeminfo.html">System Settings</a></li>
+            <li><a href="timesettings.html">Time Settings</a></li>
+            <li><a href="securitysettings.html">Security Settings</a></li>
+            <li><a href="keyprogram.html">Key Programming Settings</a></li>
+            <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+        </ul>
+    </div>
+
+    <div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="keypadtonesettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Tuş Sesi</b></font></td>
-                        <td width="300" align=""><input type="checkbox" name="keySound" value="">
+                <table>
+                    <caption class="caption"> General Settings</caption>
+                        <td class="label"><b>Key Sound</b></td>
+                        <td class="value"><input type="checkbox" name="keySound" value="">
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Tuş Sesi Seçimi</b></font></td>
-                            <td width="300" align=""><select id="keypadTone" name="keypadTone" align="left" onchange="">
-                                <option value="0" selected>Tuş Sesi 1</option>
-                                <option value="1">Tuş Sesi 2</option>
-                                <option value="2">Tuş Sesi 3</option>
-                                <option value="3">Tuş Sesi 4</option>
-                                <option value="4">Tuş Sesi 5</option>
+                            <td class="label"><b>Keypad Tone</b></td>
+                            <td class="value"><select id="keypadTone" name="keypadTone" align="left" onchange="">
+                                <option value="0" selected>Keypad Tone 1</option>
+                                <option value="1">Keypad Tone 2</option>
+                                <option value="2">Keypad Tone 3</option>
+                                <option value="3">Keypad Tone 4</option>
+                                <option value="4">Keypad Tone 5</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Tuş Sesi Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="keypadToneLevel" value="8" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Keypad Tone Level</b></td>
+                            <td class="value"><input type="text" name="keypadToneLevel" value="8" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+    </div>
 </body>
 </html>
