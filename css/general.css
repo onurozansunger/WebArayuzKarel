@@ -40,7 +40,7 @@ ul {
     width: 60%;
     min-height: 100px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 20px 20px;
     border-bottom: 3px solid #f78f1e;
     border-right:3px solid #f78f1e;
     border-left:3px solid #f78f1e;
@@ -62,11 +62,13 @@ ul {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     color: #00aeef;
     border-bottom: 1px solid #f78f1e;
 }
-
+.frame td.value{
+    display:initial;
+}
 .frame table {
     margin: auto;
     border-collapse: collapse;
@@ -74,7 +76,7 @@ ul {
 }
 
 .frame table td {
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .frame td.label {
