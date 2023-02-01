@@ -47,6 +47,7 @@
             <div class="frame">
             <form id= 0 name="form1" method="POST" enctype="application/x-www-form-urlencoded" action="ringtonesettings">
                 <table>
+                    <caption class="caption">Ringtone Settings</caption>
                         <td class="label"><b>Ringtone Level</b></td>
                         <td class="value"><input type="text" name="ringtoneLevel" value="7" maxlength="2" size="5">
                             <td class="information"><i>( 0 - 15 )</i></td></td>
@@ -74,25 +75,23 @@
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="erase" value="Delete" width=30>
-                <input type="submit" name="save" value="Save" width=30>
+                <input class="value" type="submit" name="erase" value="Delete" width=60>
+                <input class="value" type="submit" name="save" value="Save" width=60>
             </form>
             <form id=1 name="form2" method="POST" enctype="multipart/form-data" action="ringtonesettings">
-                <table border="0" width="498" cellpadding="0" cellspacing="0">
-                    <tr><td width="498" align="center"><table border="0"  width="498" cellpadding="2" cellspacing="0">
-                        <tr><td align="center" width="498"><font face="Arial" size="2,5" color="red">U-Law veya A-Law formatında wav dosyası yükleyebilirsiniz</font>
-                        </td></tr></table></td></tr><tr><td width="498"><table border="0"  width="498" cellpadding="2" cellspacing="0" bordercolor="#0080C0">
-                    <tr><td align="right" width="180"><font face="Arial"size="2,5" color="#0080C0"><b>Boş Alan:</b>&nbsp;</font>
-                    </td><td width="318"><font face="Arial"size="2,5"><b>2.31 Megabayt</b></font>
-                    </td></tr></table></td></tr><tr><td width="498"><table border="0"  width="498" cellpadding="2" cellspacing="0" bordercolor="#0080C0">
-                    <tr><td align="right" width="180"><font face="Arial"size="2,5" color="#0080C0"><b>Zil Sesi yükle:</b></font>
-                    </td><td width="318">&nbsp;<input name=RingtoneFile type="file" value="" size="32">
+                <table>
+                    <td class="caption">You can upload .wav files in U-Law or A-Law format</td>
+                    <tr><td class="label"><b>Empty Space</b></td>
+                    <td class="value"><b>2.31 MB</b></td>
+                   </tr>
+                      <tr><td class="label"><b>Upload Ringtone</b></td>
+                        <td class="value">&nbsp;<input name=RingtoneFile type="file" value="" size="32">
                     </td></tr></table></td></tr><tr><td align="center"><table border="0"  width="498" cellpadding="0" cellspacing="0">
-                    <tr><td align="center" width="498"><input type="submit" name="UploadStart" value="Başla" onClick="return ringtoneUploadConfirm();">
-                    </td></tr></table></td></tr></table></form>
-        </td>
-    </tr>
-</table>
+                <tr><td align="center" width="498"><input type="submit" name="UploadStart" value="Start" onClick="return ringtoneUploadConfirm();">
+                </td></tr></table></td></tr></table></form>
+                </td>
+                </tr>
+                </table>
             </div>
 <script LANGUAGE="JavaScript">
     function ringtoneUploadConfirm()
