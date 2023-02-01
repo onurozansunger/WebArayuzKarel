@@ -17,11 +17,14 @@ collection[0].style.backgroundColor = select.value;
 collection[1].style.backgroundColor = select.value;
 collection[2].style.backgroundColor = select.value;
 collection[3].style.backgroundColor = select.value;
+collection[4].style.backgroundColor = select.value;
 
 collection2[0].style.backgroundColor = select.value;
 collection2[1].style.backgroundColor = select.value;
 collection2[2].style.backgroundColor = select.value;
 collection2[3].style.backgroundColor = select.value;
+collection2[4].style.backgroundColor = select.value;
+
 
 // Checkbox a göre değiştir
 select.addEventListener("change", function() {
@@ -32,11 +35,13 @@ select.addEventListener("change", function() {
     collection[1].style.backgroundColor = select.value;
     collection[2].style.backgroundColor = select.value;
     collection[3].style.backgroundColor = select.value;
+    collection[4].style.backgroundColor = select.value;
 
     collection2[0].style.backgroundColor = select.value;
     collection2[1].style.backgroundColor = select.value;
     collection2[2].style.backgroundColor = select.value;
     collection2[3].style.backgroundColor = select.value;
+    collection2[4].style.backgroundColor = select.value;
 });
 
 
