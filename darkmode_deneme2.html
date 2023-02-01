@@ -63,46 +63,42 @@
     const select = document.querySelector("#color-select");
     const collection = document.getElementsByClassName("mainheader");
     const collection2 = document.getElementsByClassName("li");
+    console.log(collection);
 
-    // Get the system theme preference
-    let themePreference = localStorage.getItem('theme');
-
-    // If there is no theme preference, set it to the default
-    if (!themePreference) {
-        themePreference = "#00aeef";
-        localStorage.setItem('theme', themePreference);
+    // Sistemin temasını oku ve ona göre değiştir
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        select.value = "#2c2c2c";
+    } else {
+        select.value = "#00aeef";
     }
 
-    select.value = themePreference;
-    document.body.style.backgroundColor = themePreference;
-    document.querySelector(".mainmenuframe").style.backgroundColor = themePreference;
+    document.body.style.backgroundColor = select.value;
+    document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
 
-    collection[0].style.backgroundColor = themePreference;
-    collection[1].style.backgroundColor = themePreference;
-    collection[2].style.backgroundColor = themePreference;
-    collection[3].style.backgroundColor = themePreference;
+    collection[0].style.backgroundColor = select.value;
+    collection[1].style.backgroundColor = select.value;
+    collection[2].style.backgroundColor = select.value;
+    collection[3].style.backgroundColor = select.value;
 
-    collection2[0].style.backgroundColor = themePreference;
-    collection2[1].style.backgroundColor = themePreference;
-    collection2[2].style.backgroundColor = themePreference;
-    collection2[3].style.backgroundColor = themePreference;
+    collection2[0].style.backgroundColor = select.value;
+    collection2[1].style.backgroundColor = select.value;
+    collection2[2].style.backgroundColor = select.value;
+    collection2[3].style.backgroundColor = select.value;
 
+    // Checkbox a göre değiştir
     select.addEventListener("change", function() {
-        themePreference = select.value;
-        localStorage.setItem('theme', themePreference);
+        document.body.style.backgroundColor = select.value;
+        document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
 
-        document.body.style.backgroundColor = themePreference;
-        document.querySelector(".mainmenuframe").style.backgroundColor = themePreference;
+        collection[0].style.backgroundColor = select.value;
+        collection[1].style.backgroundColor = select.value;
+        collection[2].style.backgroundColor = select.value;
+        collection[3].style.backgroundColor = select.value;
 
-        collection[0].style.backgroundColor = themePreference;
-        collection[1].style.backgroundColor = themePreference;
-        collection[2].style.backgroundColor = themePreference;
-        collection[3].style.backgroundColor = themePreference;
-
-        collection2[0].style.backgroundColor = themePreference;
-        collection2[1].style.backgroundColor = themePreference;
-        collection2[2].style.backgroundColor = themePreference;
-        collection2[3].style.backgroundColor = themePreference;
+        collection2[0].style.backgroundColor = select.value;
+        collection2[1].style.backgroundColor = select.value;
+        collection2[2].style.backgroundColor = select.value;
+        collection2[3].style.backgroundColor = select.value;
     });
 </script>
 </body>
