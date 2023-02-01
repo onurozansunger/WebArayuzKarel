@@ -29,7 +29,6 @@ ul {
 .sidebar {
     color: #ffffff;
     height: 0%;
-
 }
 
 .frame {
@@ -66,14 +65,12 @@ ul {
     margin-bottom: 80px;
     color: #00aeef;
     border-bottom: 1px solid #f78f1e;
-
 }
 
 .frame table {
     margin: auto;
     border-collapse: collapse;
     margin-top: 20px;
-
 }
 
 .frame table td {
@@ -90,6 +87,12 @@ ul {
     font-size: large;
     color: #000000;
 }
+.frame td.information {
+    font-size: x-small;
+    color: black;
+    display: inline-block;
+    padding-left: 5px;
+}
 
 .navbar-nav button {
     z-index: 100000;
@@ -98,4 +101,3 @@ input[type="submit"] {
     display: block;
     margin: 0 auto;
 }
-
