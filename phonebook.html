@@ -33,15 +33,17 @@
             <table>
                     <caption class="caption">Phone Book</caption>
                     <td class="label"><b>Name</b></td>
-                    <td class="value"><input type="text" name="phonebookName" value="" maxlength="63" size="20"></td>
+                    <td class="value"><input type="text" name="phonebookName" value="" maxlength="63" size="20">
+                    </td>
                     <td class="label"><b>Number</b></td>
-                    <td class="label"><b>Profile</b></td>
+                    <td class="value"><input type="text" name="phonebookNo" value="" maxlength="63" size="20">
+                    </td>
+                    <td class="label"><b>Profile</b>
+                    </td>
                 </tr>
                     <form name="form1" method="POST" enctype="application/x-www-form-urlencoded" action="phonebookadd">
                         <tr>
                             <td width="20" align="center"></td>
-
-                            <td width="120" align="center"><input type="text" name="phonebookNo" value="" maxlength="63" size="20"></td>
                             <td width="120" align="center"><select id="Account" name="Account" align="left" onchange="">
                                 <option value="0" selected>Hesap 1</option>
                                 <option value="1">Hesap 2</option>
