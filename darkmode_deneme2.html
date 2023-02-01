@@ -51,15 +51,11 @@
 
 <select id="color-select" style="position: absolute; right: 10px; top: 10px;">
     <option value="#00aeef">Karel Blue</option>
-    <option value="#F78F1EFF">Karel Orange</option>
-    <option value="#ffffff">Bright</option>
     <option value="#2c2c2c">Dark</option>
 </select>
 <style>
 
     #color-select option[value="#00aeef"]
-    #color-select option[value="#F78F1EFF"]
-    #color-select option[value="#ffffff"]
     #color-select option[value="#2c2c2c"]
 
 </style>
@@ -67,20 +63,46 @@
     const select = document.querySelector("#color-select");
     const collection = document.getElementsByClassName("mainheader");
     const collection2 = document.getElementsByClassName("li");
-    console.log(collection);
+
+    // Get the system theme preference
+    let themePreference = localStorage.getItem('theme');
+
+    // If there is no theme preference, set it to the default
+    if (!themePreference) {
+        themePreference = "#00aeef";
+        localStorage.setItem('theme', themePreference);
+    }
+
+    select.value = themePreference;
+    document.body.style.backgroundColor = themePreference;
+    document.querySelector(".mainmenuframe").style.backgroundColor = themePreference;
+
+    collection[0].style.backgroundColor = themePreference;
+    collection[1].style.backgroundColor = themePreference;
+    collection[2].style.backgroundColor = themePreference;
+    collection[3].style.backgroundColor = themePreference;
+
+    collection2[0].style.backgroundColor = themePreference;
+    collection2[1].style.backgroundColor = themePreference;
+    collection2[2].style.backgroundColor = themePreference;
+    collection2[3].style.backgroundColor = themePreference;
+
     select.addEventListener("change", function() {
-        document.body.style.backgroundColor = select.value;
-        document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
+        themePreference = select.value;
+        localStorage.setItem('theme', themePreference);
 
-        collection[0].style.backgroundColor = select.value;
-        collection[1].style.backgroundColor = select.value;
-        collection[2].style.backgroundColor = select.value;
-        collection[3].style.backgroundColor = select.value;
+        document.body.style.backgroundColor = themePreference;
+        document.querySelector(".mainmenuframe").style.backgroundColor = themePreference;
 
-        collection2[0].style.backgroundColor = select.value;
-        collection2[1].style.backgroundColor = select.value;
-        collection2[2].style.backgroundColor = select.value;
-        collection2[3].style.backgroundColor = select.value;
+        collection[0].style.backgroundColor = themePreference;
+        collection[1].style.backgroundColor = themePreference;
+        collection[2].style.backgroundColor = themePreference;
+        collection[3].style.backgroundColor = themePreference;
+
+        collection2[0].style.backgroundColor = themePreference;
+        collection2[1].style.backgroundColor = themePreference;
+        collection2[2].style.backgroundColor = themePreference;
+        collection2[3].style.backgroundColor = themePreference;
     });
 </script>
 </body>
