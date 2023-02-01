@@ -25,68 +25,75 @@
     <div class="container">
     </div>
 </div>
-            <font face="Arial" size="2"><i><b>Ses Seviye Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+<div class="sidebar">
+    <ul class="menu">
+        <li><a href="generalsettings.html">General Settings</a></li>
+        <li><a href="networksettings.html">Network Settings</a></li>
+        <li><a href="callsettings.html">Call Settings</a></li>
+        <li><a href="codecsettings.html">Codec Settings</a></li>
+        <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+        <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+        <li><a href="gainsettings.html">Gain Settings</a></li>
+        <li><a href="systemsettings.html">System Settings</a></li>
+        <li><a href="timesettings.html">Time Settings</a></li>
+        <li><a href="securitysettings.html">Security Settings</a></li>
+        <li><a href="keyprogram.html">Key Programming Settings</a></li>
+        <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+    </ul>
+</div>
+            <div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="gainsettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ahize Ses Seviyesi</b></font></td>
-                        <td width="300" align=""><input type="text" name="HandsetVolume" value="13" maxlength="2" size="5">
-                            <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                <table>
+                    <caption class="caption">Gain Settings</caption>
+                        <td class="label"><b>Handset Volume</b></td>
+                        <td class="value"><input type="text" name="HandsetVolume" value="13" maxlength="2" size="5">
+                            <td class="information"><i>( 0 - 15 )</i></td></td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ahize Mikrofon Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HandsetMic" value="5" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Handset Microphone Level</b></td>
+                            <td class="label"><input type="text" name="HandsetMic" value="5" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Dış Hat Ahize Ses Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HandsetLineVolume" value="7" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>International Line Handset Volume Level</b></td>
+                            <td class="value"><input type="text" name="HandsetLineVolume" value="7" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Dış Hat Ahize Mikrofon Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HandsetLineMic" value="10" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>International Line Handset Microphone Level</b></td>
+                            <td class="value"><input type="text" name="HandsetLineMic" value="10" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Handsfree Ses Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HandsfreeVolume" value="8" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Handsfree Volume Level</b></td>
+                            <td class="value"><input type="text" name="HandsfreeVolume" value="8" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Handsfree Mikrofon Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HandsfreeMic" value="10" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Handsfree Microphone Level</b></td>
+                            <td class="value"><input type="text" name="HandsfreeMic" value="10" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Kulaklık Ses Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HeadsetVolume" value="5" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Headset Level</b></font></td>
+                            <td class="value"><input type="text" name="HeadsetVolume" value="5" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Kulaklık Mikrofon Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="HeadsetMic" value="14" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Headset Microphone Level</b></td>
+                            <td class="value"><input type="text" name="HeadsetMic" value="14" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ton Seviyesi</b></font></td>
-                            <td width="300" align=""><input type="text" name="Tone" value="12" maxlength="2" size="5">
-                                <font face="Arial" size=2 color=#0080C0><i>( 0 - 15 )</i></font></td>
+                            <td class="label"><b>Tone Level</b></font></td>
+                            <td class="value"><input type="text" name="Tone" value="12" maxlength="2" size="5">
+                                <td class="information"><i>( 0 - 15 )</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Ses Seviye Katsayısı</b></font></td>
-                            <td width="300" align=""><select id="GainMultiplier" name="GainMultiplier" align="left" onchange="">
+                            <td class="label"><b>Gain Multiplier</b></font></td>
+                            <td class="value"><select id="GainMultiplier" name="GainMultiplier" align="left" onchange="">
                                 <option value="0">1</option>
                                 <option value="1">2</option>
                                 <option value="2" selected>3</option>
@@ -96,11 +103,11 @@
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+            </div>
 </body>
 </html>
