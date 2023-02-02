@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/mainmenu.css" />
     <link rel="stylesheet" href="css/menu.css" />
 </head>
-<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<body>
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
@@ -25,114 +25,116 @@
     <div class="container">
     </div>
 </div>
-            <font face="Arial" size="2"><i><b>LDAP Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+<div class="sidebar">
+    <ul class="menu">
+        <li><a href="generalsettings.html">General Settings</a></li>
+        <li><a href="networksettings.html">Network Settings</a></li>
+        <li><a href="callsettings.html">Call Settings</a></li>
+        <li><a href="codecsettings.html">Codec Settings</a></li>
+        <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+        <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+        <li><a href="gainsettings.html">Gain Settings</a></li>
+        <li><a href="systemsettings.html">System Settings</a></li>
+        <li><a href="timesettings.html">Time Settings</a></li>
+        <li><a href="securitysettings.html">Security Settings</a></li>
+        <li><a href="keyprogram.html">Key Programming Settings</a></li>
+        <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+    </ul>
+</div>
+<div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="ldapsettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Durum</b></font></td>
-                        <td width="300" align=""><select id="Status" name="Status" align="left" onchange="">
-                            <option value="0" selected>Devre Dışı</option>
-                            <option value="1">Etkin</option>
+                <table>
+                    <caption class="caption">LDAP Settings</caption>
+                        <td class="label"><b>Status</b></td>
+                        <td class="value"><select id="Status" name="Status" align="left" onchange="">
+                            <option value="0" selected>Disabled</option>
+                            <option value="1">Enabled</option>
                         </select>
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Versiyon</b></font></td>
-                            <td width="300" align=""><select id="Version" name="Version" align="left" onchange="">
-                                <option value="0">Versiyon 1</option>
-                                <option value="1">Versiyon 2</option>
-                                <option value="2" selected>Versiyon 3 / Active Directory</option>
+                            <td class="label"><b>Version</b></td>
+                            <td class="value"><select id="Version" name="Version" align="left" onchange="">
+                                <option value="0">Version 1</option>
+                                <option value="1">Version 2</option>
+                                <option value="2" selected>Version 3 / Active Directory</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Senkronizasyon Süresi</b></font></td>
-                            <td width="300" align=""><input type="text" name="SyncTimeout" value="1" maxlength="5" size="5">
-                                <font face="Arial" size="2" color=#0080C0><i>Saat</i></font></td>
+                            <td class="label"><b>Synchronization Timeout</b></td>
+                            <td class="value"><input type="text" name="SyncTimeout" value="1" maxlength="5" size="5">
+                                <td class="information"><i>Hour</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Sunucu</b></font></td>
-                            <td width="300" align="left"><input type="text" name="Server" value="" maxlength="256" size="32">
+                            <td class="label"><b>Server</b></td>
+                            <td class="value"><input type="text" name="Server" value="" maxlength="256" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Kullanıcı</b></font></td>
-                            <td width="300" align="left"><input type="text" name="Username" value="" maxlength="256" size="32">
+                            <td class="label"><b>User</b></td>
+                            <td class="value"><input type="text" name="Username" value="" maxlength="256" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Şifre</b></font></td>
-                            <td width="300" align="left"><input type="password" name="Password" value="" maxlength="64" size="32">
+                            <td class="label"><b>Password</b></td>
+                            <td class="value"><input type="password" name="Password" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Kök</b></font></td>
-                            <td width="300" align="left"><input type="text" name="Base" value="" maxlength="256" size="32">
+                            <td class="label"><b>Base</b></td>
+                            <td class="value"><input type="text" name="Base" value="" maxlength="256" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Filtre</b></font></td>
-                            <td width="300" align="left"><input type="text" name="Filter" value="" maxlength="256" size="32">
+                            <td class="label"><b>Filter</b></td>
+                            <td class="value"><input type="text" name="Filter" value="" maxlength="256" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>İsim</b></font></td>
-                            <td width="300" align="left"><input type="text" name="NameAttribute" value="cn" maxlength="64" size="32">
+                            <td class="label"><b>Name</b></td>
+                            <td class="value"><input type="text" name="NameAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Telefon Numarası</b></font></td>
-                            <td width="300" align="left"><input type="text" name="NumberAttribute" value="" maxlength="64" size="32">
+                            <td class="label"><b>Phone Number</b></td>
+                            <td class="value"><input type="text" name="NumberAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>İş Numarası</b></font></td>
-                            <td width="300" align="left"><input type="text" name="OfficeAttribute" value="" maxlength="64" size="32">
+                            <td class="label"><b>Work Phone Number</b></td>
+                            <td class="value"><input type="text" name="OfficeAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ev Numarası</b></font></td>
-                            <td width="300" align="left"><input type="text" name="HomeAttribute" value="" maxlength="64" size="32">
+                            <td class="label"><b>Home Phone Number</b></td>
+                            <td class="value"><input type="text" name="HomeAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Cep Numarası</b></font></td>
-                            <td width="300" align="left"><input type="text" name="MobileAttribute" value="" maxlength="64" size="32">
+                            <td class="label"><b>Mobile Phone Number</b></td>
+                            <td class="value"><input type="text" name="MobileAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Fax Numarası</b></font></td>
-                            <td width="300" align="left"><input type="text" name="FaxAttribute" value="" maxlength="64" size="32">
+                            <td class="label"><b>Fax Number</b></td>
+                            <td class="value"><input type="text" name="FaxAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Eposta</b></font></td>
-                            <td width="300" align="left"><input type="text" name="EmailAttribute" value="" maxlength="64" size="32">
+                            <td class="label"><b>E-Mail</b></td>
+                            <td class="value"><input type="text" name="EmailAttribute" value="" maxlength="64" size="32">
                             </td>
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+</div>
 </body>
 </html>

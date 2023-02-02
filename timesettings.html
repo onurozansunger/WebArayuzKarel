@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/mainmenu.css" />
     <link rel="stylesheet" href="css/menu.css" />
 </head>
-<body class="body" bgcolor="#FFFFFF" text="#804000" link="#804000" vlink="#804000" alink="#804000" onLoad="">
+<body>
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
@@ -25,50 +25,62 @@
     <div class="container">
     </div>
 </div>
-            <font face="Arial" size="2"><i><b>Tarih Saat Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
-            <form method="POST" id=0 enctype="application/x-www-form-urlencoded" action="timesettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Zamanı Ayarla</b></font></td>
-                        <td width="300" align="left"><select id="setTime" name="setTime" align="left" onchange="SetTime()">
-                            <option value="0" selected>Devre Dışı</option>
-                            <option value="1">Etkin</option>
+<div class="sidebar">
+    <ul class="menu">
+        <li><a href="generalsettings.html">General Settings</a></li>
+        <li><a href="networksettings.html">Network Settings</a></li>
+        <li><a href="callsettings.html">Call Settings</a></li>
+        <li><a href="codecsettings.html">Codec Settings</a></li>
+        <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+        <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+        <li><a href="gainsettings.html">Gain Settings</a></li>
+        <li><a href="systemsettings.html">System Settings</a></li>
+        <li><a href="timesettings.html">Time Settings</a></li>
+        <li><a href="securitysettings.html">Security Settings</a></li>
+        <li><a href="keyprogram.html">Key Programming Settings</a></li>
+        <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+    </ul>
+</div>
+                <div class="frame">
+                <form method="POST" id=0 enctype="application/x-www-form-urlencoded" action="timesettings">
+                <table>
+                    <caption class="caption">Time Settings</caption>
+                        <td class="label"><b>Set Time</b></td>
+                        <td class="value"><select id="setTime" name="setTime" align="left" onchange="SetTime()">
+                            <option value="0" selected>Disabled</option>
+                            <option value="1">Enabled</option>
                         </select>
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Saati Ayarla</b></font></td>
-                            <td width="300" align="left"><input type="text" name="timeHour" value="09" maxlength="2" size="1">&nbsp;<b>:</b>&nbsp;
+                            <td class="label"><b>Time</b></td>
+                            <td class="value"><input type="text" name="timeHour" value="09" maxlength="2" size="1">&nbsp;<b>:</b>&nbsp;
                                 <input type="text" name="timeMin" value="10" maxlength="2" size="1">
-                                <font face=Arial size=2 color=#0080C0><i>(Saat:Dakika)</i></font>
+                                <td class="information"><i>(Hour:Minute)</i></td>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Tarihi Ayarla</b></font></td>
-                            <td width="300" align="left"><input type="text" name="timeDay" value="26" maxlength="2" size="1">&nbsp;<b>/</b>&nbsp;
+                            <td class="label"><b>Date</b></td>
+                            <td class="value"><input type="text" name="timeDay" value="26" maxlength="2" size="1">&nbsp;<b>/</b>&nbsp;
                                 <input type="text" name="timeMonth" value="01" maxlength="2" size="1">&nbsp;<b>/</b>&nbsp;
                                 <input type="text" name="timeYear" value="2023" maxlength="4" size="2">
-                                <font face=Arial size=2 color=#0080C0><i>(Gün/Ay/Yıl)</i></font>
+                                <td class="information"><i>(dd/mm/yyyy)</i></td>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Tarih Formatı</b></font></td>
-                            <td width="300" align=""><select id="dateFormat" name="dateFormat" align="left" onchange="">
-                                <option value="0" selected>gg.aa.yyyy</option>
-                                <option value="1">aa.gg.yyyy</option>
-                                <option value="2">yyyy.aa.gg</option>
+                            <td class="label"><b>Date Format</b></td>
+                            <td class="value"><select id="dateFormat" name="dateFormat" align="left" onchange="">
+                                <option value="0" selected>dd/mm/yyyy</option>
+                                <option value="1">mm.dd.yyyy</option>
+                                <option value="2">yyyy.mm.dd</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Zaman Dilimi</b></font></td>
-                            <td width="300" align="left"><select id="timeZone" name="timeZone" align="left" onchange="">
+                            <td class="label"><b>Timezone</b></td>
+                            <td class="value"><select id="timeZone" name="timeZone" align="left" onchange="">
                                 <option value="0">(GMT-12:00)West International Date Line</option>
                                 <option value="1">(GMT-11:00)Midway Island,Samoa</option>
                                 <option value="2">(GMT-10:00)Hawaii</option>
@@ -149,161 +161,146 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Sntp Sunucu</b></font></td>
-                            <td width="300" align=""><input type="text" name="sntpServer" value="" maxlength="127" size="32">
-                                <font face=Arial size=2 color=#0080C0><i>(Ip veya Uri)</i></font></td>
+                            <td class="label"><b>SNTP Server</b></td>
+                            <td class="value"><input type="text" name="sntpServer" value="" maxlength="127" size="32">
+                                <td class="information"><i>(IP OR URI)</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Yaz Saati</b></font></td>
-                            <td width="300" align="left"><select id="DstEnable" name="DstEnable" align="left" onchange="">
-                                <option value="0">Devre Dışı</option>
-                                <option value="1" selected>Etkin</option>
+                            <td class="label"><b>Summer Time</b></td>
+                            <td class="value"><select id="DstEnable" name="DstEnable" align="left" onchange="">
+                                <option value="0">Disabled</option>
+                                <option value="1" selected>Enabled</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Yaz Saati Ayarı</b></font></td>
-                            <td width="300" align="left"><select id="DstType" name="DstType" align="left" onchange="SetDstType()">
-                                <option value="0">Tarihe Göre</option>
-                                <option value="1" selected>Haftaya Göre</option>
+                            <td class="label"><b>Set Summer Time</b></td>
+                            <td class="value"><select id="DstType" name="DstType" align="left" onchange="SetDstType()">
+                                <option value="0">From Date</option>
+                                <option value="1" selected>From Week</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ofset</b></font></td>
-                            <td width="300" align=""><input type="text" name="DstOfset" value="60" maxlength="4" size="2">
-                                <font face=Arial size=2 color=#0080C0><i>(Dakika)</i></font></td>
+                            <td class="label"><b>Ofset</b></td>
+                            <td class="value"><input type="text" name="DstOfset" value="60" maxlength="4" size="2">
+                                <td class="information"><i>(Minute)</i></td></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Ayı</b></font></td>
-                            <td width="300" align="left"><select id="DstWeekStartMonth" name="DstWeekStartMonth" align="left" onchange="">
-                                <option value="0">Ocak</option>
-                                <option value="1">Şubat</option>
-                                <option value="2" selected>Mart</option>
-                                <option value="3">Nisan</option>
-                                <option value="4">Mayıs</option>
-                                <option value="5">Haziran</option>
-                                <option value="6">Temmuz</option>
-                                <option value="7">Ağustos</option>
-                                <option value="8">Eylül</option>
-                                <option value="9">Ekim</option>
-                                <option value="10">Kasım</option>
-                                <option value="11">Aralık</option>
+                            <td class="label"><b>Starting Month</b></td>
+                            <td class="value"><select id="DstWeekStartMonth" name="DstWeekStartMonth" align="left" onchange="">
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2" selected>March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8">September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Günü</b></font></td>
-                            <td width="300" align="left"><select id="DstWeekStartDay" name="DstWeekStartDay" align="left" onchange="">
-                                <option value="0" selected>Pazar</option>
-                                <option value="1">Pazartesi</option>
-                                <option value="2">Salı</option>
-                                <option value="3">Çarşamba</option>
-                                <option value="4">Perşembe</option>
-                                <option value="5">Cuma</option>
-                                <option value="6">Cumartesi</option>
+                            <td class="label"><b>Starting Day</b></td>
+                            <td class="value"><select id="DstWeekStartDay" name="DstWeekStartDay" align="left" onchange="">
+                                <option value="0" selected>Sunday</option>
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Haftası</b></font></td>
-                            <td width="300" align="left"><select id="DstWeekStartWeek" name="DstWeekStartWeek" align="left" onchange="">
-                                <option value="0">1. Hafta</option>
-                                <option value="1">2. Hafta</option>
-                                <option value="2">3. Hafta</option>
-                                <option value="3">4. Hafta</option>
-                                <option value="4" selected>Son Hafta</option>
+                            <td class="label"><b>Starting Week</b></td>
+                            <td class="value"><select id="DstWeekStartWeek" name="DstWeekStartWeek" align="left" onchange="">
+                                <option value="0">First Week</option>
+                                <option value="1">Second Week</option>
+                                <option value="2">Third Week</option>
+                                <option value="3">Fourth Week</option>
+                                <option value="4" selected>Last Week</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Saati</b></font></td>
-                            <td width="300" align=""><input type="text" name="DstWeekStartTime" value="3" maxlength="2" size="1">
+                            <td class="label"><b>Starting Hour</b></td>
+                            <td class="value"><input type="text" name="DstWeekStartTime" value="3" maxlength="2" size="1">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Ayı</b></font></td>
-                            <td width="300" align="left"><select id="DstWeekEndMonth" name="DstWeekEndMonth" align="left" onchange="">
-                                <option value="0">Ocak</option>
-                                <option value="1">Şubat</option>
-                                <option value="2">Mart</option>
-                                <option value="3">Nisan</option>
-                                <option value="4">Mayıs</option>
-                                <option value="5">Haziran</option>
-                                <option value="6">Temmuz</option>
-                                <option value="7">Ağustos</option>
-                                <option value="8">Eylül</option>
-                                <option value="9" selected>Ekim</option>
-                                <option value="10">Kasım</option>
-                                <option value="11">Aralık</option>
+                            <td class="label"><b>End Month</b></td>
+                            <td class="value"><select id="DstWeekEndMonth" name="DstWeekEndMonth" align="left" onchange="">
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8" selected>September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Günü</b></font></td>
-                            <td width="300" align="left"><select id="DstWeekEndDay" name="DstWeekEndDay" align="left" onchange="">
-                                <option value="0" selected>Pazar</option>
-                                <option value="1">Pazartesi</option>
-                                <option value="2">Salı</option>
-                                <option value="3">Çarşamba</option>
-                                <option value="4">Perşembe</option>
-                                <option value="5">Cuma</option>
-                                <option value="6">Cumartesi</option>
+                            <td class="label"><b>End Day</b></td>
+                            <td class="value"><select id="DstWeekEndDay" name="DstWeekEndDay" align="left" onchange="">
+                                <option value="0" selected>Sunday</option>
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Haftası</b></font></td>
-                            <td width="300" align="left"><select id="DstWeekEndWeek" name="DstWeekEndWeek" align="left" onchange="">
-                                <option value="0">1. Hafta</option>
-                                <option value="1">2. Hafta</option>
-                                <option value="2">3. Hafta</option>
-                                <option value="3">4. Hafta</option>
-                                <option value="4" selected>Son Hafta</option>
+                            <td class="label"><b>Ending Week</b></td>
+                            <td class="value"><select id="DstWeekEndWeek" name="DstWeekEndWeek" align="left" onchange="">
+                                <option value="0">First Week</option>
+                                <option value="1">Second Week</option>
+                                <option value="2">Third Week</option>
+                                <option value="3">Fourth Week</option>
+                                <option value="4" selected>Last Week</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Saati</b></font></td>
-                            <td width="300" align=""><input type="text" name="DstWeekEndTime" value="4" maxlength="2" size="1">
+                            <td class="label"><b>Ending Hour</b></td>
+                            <td class="value"><input type="text" name="DstWeekEndTime" value="4" maxlength="2" size="1">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Başlangıç Zamanı</b></font></td>
-                            <td width="300" align="left"><font face=Arial size=2 color=#0080C0>&nbsp;<i>Ay</i>&nbsp;</font><input type="text" name="DstDateStartMonth" value="1" maxlength="2" size="1">
-                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Gün</i>&nbsp;</font><input type="text" name="DstDateStartDay" value="1" maxlength="2" size="1">
-                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Saat</i>&nbsp;</font><input type="text" name="DstDateStartTime" value="0" maxlength="2" size="1">
-                            </td>
+                            <td class="label"><b>Starting Time</b></td>
+                            <td class="value">&nbsp;<i>Month</i>&nbsp;<input type="text" name="DstDateStartMonth" value="1" maxlength="2" size="1"></td>
+                                <td class="value">&nbsp;<i>Day</i><input type="text" name="DstDateStartDay" value="1" maxlength="2" size="1">&nbsp;</td>
+                                <td class="value">&nbsp;<i>Hour</i><input type="text" name="DstDateStartTime" value="0" maxlength="2" size="1"></td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Bitiş Zamanı</b></font></td>
-                            <td width="300" align="left"><font face=Arial size=2 color=#0080C0>&nbsp;<i>Ay</i>&nbsp;</font><input type="text" name="DstDateEndMonth" value="12" maxlength="2" size="1">
-                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Gün</i>&nbsp;</font><input type="text" name="DstDateEndDay" value="31" maxlength="2" size="1">
-                                <font face=Arial size=2 color=#0080C0>&nbsp;<i>Saat</i>&nbsp;</font><input type="text" name="DstDateEndTime" value="23" maxlength="2" size="1">
-                            </td>
+                            <td class="label"><b>Ending Time</b></td>
+                            <td class="value"><i>Month</i><input type="text" name="DstDateEndMonth" value="12" maxlength="2" size="1"></td>
+                                <td class="value">&nbsp;<i>Day</i><input type="text" name="DstDateEndDay" value="31" maxlength="2" size="1"></td>
+                                <td class="value">&nbsp;<i>Hour</i><input type="text" name="DstDateEndTime" value="23" maxlength="2" size="1"></td>
+
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+                </div>
 <script type="text/javascript">
     function SetTime()
     {
