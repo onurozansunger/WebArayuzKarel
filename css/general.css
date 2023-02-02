@@ -84,7 +84,7 @@ ul {
 }
 
 .frame td.value {
-    display:unset;
+    display:inline-block;
     font-size: large;
     color: #000000;
 }
