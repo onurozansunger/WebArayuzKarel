@@ -55,10 +55,13 @@
                             </td>
                             <table>
                                 <tr>
-                                <td>File:</td>
-                                <td>&nbsp;<input type="file" name="UploadFile" value="" size="32">
-                    <tr><td><input type="submit" name="UpdateStart" value="Start" onClick="return fileUploadConfirm();">
-                    </table></table></form>
+                                <td class="label">File:</td>
+                                <td class="value">&nbsp;<input type="file" name="UploadFile" value="" size="32">
+
+                    </table>
+                            <tr><td><input type="submit" name="UpdateStart" value="Start" onClick="return fileUploadConfirm();">
+                        </table>
+            </form>
     </div>
 </div>
 </body>
@@ -67,7 +70,7 @@
     {
         if( document.form1.UploadFile.value == "" )
         {
-            alert('File cannot be left empty');
+            alert('File cannot be empty');
             return false;
         }
         else

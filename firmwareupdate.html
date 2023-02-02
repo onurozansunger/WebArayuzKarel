@@ -49,19 +49,17 @@
                         <td class="label">File:</td>
                         <td class="value">&nbsp;<input name=FirmwareFile type="file" value="" size="32">
 
-                    <input type="submit" name="FirmwareStart" value="Start" onClick="return firmwareUploadConfirm();">
                   </table>
+                          <input type="submit" name="FirmwareStart" value="Start" onClick="return firmwareUploadConfirm();">
 
-            </form>
-
-    </div>
+    </form>
 </div>
 <script>
     function firmwareUploadConfirm()
     {
         if( document.form1.FirmwareFile.value == "" )
         {
-            alert('File cannot be left empty');
+            alert('File cannot be empty');
             return false;
         }
         else
