@@ -37,10 +37,8 @@
         </ul>
     </div>
     <div class="frame">
-<td width="2" bgcolor="#000000" ></td>
         <td width="508" valign="top" align="right" >
-            <font face="Arial" size="2"><i><b>Dosya Yükle</b></i></font>
-            <hr align="right" width="498" noshade color="#000000"/>
+            <font face="Arial" size="2"><i><b>Upload File</b></i></font>
             <form name="form1" method="POST" enctype="multipart/form-data" action="upload">
                 <table border="0" width="508" cellpadding="0" cellspacing="0">
                     <tr><td width="498" align="center"><table border="0"  width="498" cellpadding="2" cellspacing="0">
@@ -51,25 +49,24 @@
                     </tr>
                     </table></td></tr><tr><td width="498"><table border="0"  width="498" cellpadding="2" cellspacing="0" bordercolor="#0080C0">
                     <tr>
-                        <td align="right" width="160"><font face="Arial" size="2,5" color="#0080C0">Dosya Tercihi&nbsp;</font></td>
-                        <td width="338"><input type="radio" name="UploadOption" value="0" checked><font face="Arial" size="2,5">Konfigürasyon Dosyası</font><br/>
-                            <input type="radio" name="UploadOption" value="1"><font face="Arial" size="2,5">Telefon Defteri</font><br/>
-                            <input type="radio" name="UploadOption" value="2"><font face="Arial" size="2,5">Program Dosyası</font><br/>
-                        </td></tr><tr><td align="right" width="160"><font face="Arial"size="2,5" color="#0080C0">Dosya:&nbsp;</font>
+                        <td align="right" width="160"><font face="Arial" size="2,5" color="#0080C0">File Selection&nbsp;</font></td>
+                        <td width="338"><input type="radio" name="UploadOption" value="0" checked><font face="Arial" size="2,5">Configuration File</font><br/>
+                            <input type="radio" name="UploadOption" value="1"><font face="Arial" size="2,5">Phone Book</font><br/>
+                            <input type="radio" name="UploadOption" value="2"><font face="Arial" size="2,5">Program File</font><br/>
+                        </td></tr><tr><td align="right" width="160"><font face="Arial"size="2,5" color="#0080C0">File:&nbsp;</font>
                 </td><td width="338">&nbsp;<input type="file" name="UploadFile" value="" size="32">
                 </td></tr></table></td></tr><tr><td align="center"><table border="0"  width="498" cellpadding="0" cellspacing="0">
-                    <tr><td align="center" width="498"><input type="submit" name="UpdateStart" value="Başla" onClick="return fileUploadConfirm();">
+                    <tr><td align="center" width="498"><input type="submit" name="UpdateStart" value="Start" onClick="return fileUploadConfirm();">
                     </td></tr></table></td></tr></table></form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
-<script LANGUAGE="JavaScript">
+<script>
     function fileUploadConfirm()
     {
         if( document.form1.UploadFile.value == "" )
         {
-            alert('Dosya boş bırakılamaz');
+            alert('File cannot be left empty');
             return false;
         }
         else

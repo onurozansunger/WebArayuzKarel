@@ -37,50 +37,47 @@
         </ul>
     </div>
 <div class="frame">
-            <font face="Arial" size="2"><i><b>Fabrika Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+            <font face="Arial" size="2"><i><b>Factory Settings</b></i></font>
             <form method="POST" enctype="application/x-www-form-urlencoded" action="factorysettings">
                 <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
                     <tr><td><table><tr>
                         <td width="10" align=""></td>
                         <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Mod</b></font></td>
                         <td width="300" align=""><select id="Mode" name="Mode" align="left" onchange="OnMode()">
-                            <option value="0" selected>Bütün Ayarlar</option>
-                            <option value="1">Ayarları Seç</option>
+                            <option value="0" selected>All Setings</option>
+                            <option value="1">Choose Settings</option>
                         </select>
                         </td>
                     </tr>
                         <tr>
                             <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Ağ Ayarları</b></font></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Network Settings</b></font></td>
                             <td width="300" align=""><select id="Network" name="Network" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
+                                <option value="0" selected>Disable</option>
+                                <option value="1">Active</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
                             <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Hesap Ayarları</b></font></td>
+                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Account Settings</b></font></td>
                             <td width="300" align=""><select id="Account" name="Account" align="left" onchange="">
-                                <option value="0" selected>Devre Dışı</option>
-                                <option value="1">Etkin</option>
+                                <option value="0" selected>Disable</option>
+                                <option value="1">Active</option>
                             </select>
                             </td>
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Tamam" onClick="return confirmSubmit();">
+                <input type="submit" name="save" value="OK" onClick="return confirmSubmit();">
             </form>
         </td>
     </tr>
 </table>
-    <hr align="left" width="672" noshade color="#000000"/>
-
 </div>
 
 
-<script LANGUAGE="JavaScript">
+<script>
     function OnMode()
     {
         var change_id;
@@ -105,7 +102,7 @@
     }
     function confirmSubmit()
     {
-        var agree=confirm("Fabrika Ayarlarına Dönülecek");
+        var agree=confirm("Settings will be restored to factory defaults");
         if (agree)
             return true;
         else
