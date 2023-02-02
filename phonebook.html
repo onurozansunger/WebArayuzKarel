@@ -52,24 +52,18 @@
                             <td width="20" align="center"></td>
                         </tr>
                         <tr>
-                            <td width="20" align="center"></td>
-                            <td width="120" align="center"></td>
-                            <td witch="120" align="left"><input type="submit" name="save" value=" Add "></td>
-                            <td width="120" align="center"></td>
-                            <td width="20" align="center"></td>
                         </tr>
                 </table>
-                    </form>
-                </td></tr><tr> <font color="red"><b>Phone Book is Empty</b></font>
-            </td></tr></table>
-        </td>
-    </tr>
-</table>
+                    <td witch="120" align="left"><input type="submit" name="save" value=" Add "></td>
+
+                </form>
+                </td></tr><tr>
+                <td class="value" color="red"><b>Phone Book is Empty</b></td>
             </div>
 <script LANGUAGE="JavaScript">
     function confirmSubmit()
     {
-        var agree=confirm("Rehberin tamamını silmek istiyor musunuz?");
+        var agree=confirm("Do you want to erase all of your contacts?");
         if (agree)
             return true;
         else
@@ -95,7 +89,7 @@
             return true;
         else
         {
-            alert("Seçim yapılmadı");
+            alert("You did not choose any contact");
             return false;
         }
     }
