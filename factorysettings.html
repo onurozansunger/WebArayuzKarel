@@ -37,37 +37,33 @@
         </ul>
     </div>
 <div class="frame">
-            <font face="Arial" size="2"><i><b>Factory Settings</b></i></font>
             <form method="POST" enctype="application/x-www-form-urlencoded" action="factorysettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Mod</b></font></td>
-                        <td width="300" align=""><select id="Mode" name="Mode" align="left" onchange="OnMode()">
+                <table>
+                <caption class="caption"> General Settings</caption>
+                        <td class="label"><b>Mod</b></td>
+                        <td class="value"><select id="Mode" name="Mode" align="left" onchange="OnMode()">
                             <option value="0" selected>All Setings</option>
                             <option value="1">Choose Settings</option>
                         </select>
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Network Settings</b></font></td>
-                            <td width="300" align=""><select id="Network" name="Network" align="left" onchange="">
+                            <td class="label"><b>Network Settings</b></td>
+                            <td class="value"><select id="Network" name="Network" align="left" onchange="">
                                 <option value="0" selected>Disable</option>
                                 <option value="1">Active</option>
                             </select>
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Account Settings</b></font></td>
-                            <td width="300" align=""><select id="Account" name="Account" align="left" onchange="">
+                            <td class="label"><b>Account Settings</b></td>
+                            <td class="value"><select id="Account" name="Account" align="left" onchange="">
                                 <option value="0" selected>Disable</option>
                                 <option value="1">Active</option>
                             </select>
                             </td>
                         </tr>
-                    </table></td></tr></table>
+                    </table>
                 <br>
                 <input type="submit" name="save" value="OK" onClick="return confirmSubmit();">
             </form>
@@ -75,8 +71,7 @@
     </tr>
 </table>
 </div>
-
-
+</div>
 <script>
     function OnMode()
     {
@@ -109,6 +104,5 @@
             return false;
     }
 </script>
-</div>
 </body>
 </html>
