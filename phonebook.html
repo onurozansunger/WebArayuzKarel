@@ -30,7 +30,9 @@
 </body>
 </html>
             <div class="frame">
-            <table>
+                <form name="form1" method="POST" enctype="application/x-www-form-urlencoded" action="phonebookadd">
+
+                <table>
                     <caption class="caption">Phone Book</caption>
                     <td class="label"><b>Name</b></td>
                     <td class="value"><input type="text" name="phonebookName" value="" maxlength="63" size="20">
@@ -38,31 +40,27 @@
                     <td class="label"><b>Number</b></td>
                     <td class="value"><input type="text" name="phonebookNo" value="" maxlength="63" size="20">
                     </td>
-                    <td class="label"><b>Profile</b>
+                    <td class="label"><b>Profile</b> <td class="value"><select id="Account" name="Account" align="left" onchange="">
+                    <option value="0" selected>Hesap 1</option>
+                    <option value="1">Hesap 2</option>
+                    <option value="2">Hesap 3</option>
+                    <option value="3">Hesap 4</option>
+                    <option value="4">Bluetooth</option>
+                </select>
                     </td>
                 </tr>
-                    <form name="form1" method="POST" enctype="application/x-www-form-urlencoded" action="phonebookadd">
-                        <tr>
-                            <td width="20" align="center"></td>
-                            <td width="120" align="center"><select id="Account" name="Account" align="left" onchange="">
-                                <option value="0" selected>Hesap 1</option>
-                                <option value="1">Hesap 2</option>
-                                <option value="2">Hesap 3</option>
-                                <option value="3">Hesap 4</option>
-                                <option value="4">Bluetooth</option>
-                            </select>
-                            </td>
                             <td width="20" align="center"></td>
                         </tr>
                         <tr>
                             <td width="20" align="center"></td>
                             <td width="120" align="center"></td>
-                            <td witch="120" align="left"><input type="submit" name="save" value=" Ekle "></td>
+                            <td witch="120" align="left"><input type="submit" name="save" value=" Add "></td>
                             <td width="120" align="center"></td>
                             <td width="20" align="center"></td>
                         </tr>
+                </table>
                     </form>
-                </table></td></tr><tr height=200><td align="center"></td></tr><tr><td align="center"><font face="Arial" size="2" color="red"><b>Rehber Boş</b></font>
+                </td></tr><tr> <font color="red"><b>Phone Book is Empty</b></font>
             </td></tr></table>
         </td>
     </tr>
