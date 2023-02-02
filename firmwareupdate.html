@@ -40,11 +40,8 @@
             <form name="form1" method="POST" enctype="multipart/form-data" action="firmwareupdate" OnSubmit=submit_confirm()>
                 <table>
                     <caption class="caption"> Firmware Update</caption>
-                </table>
-
                   <tr>
                       <td>
-                          <table>
                     <tr>
                         <td class="label">File:</td>
                         <td class="value">&nbsp;<input name=FirmwareFile type="file" value="" size="32">
@@ -53,6 +50,7 @@
                           <input type="submit" name="FirmwareStart" value="Start" onClick="return firmwareUploadConfirm();">
 
     </form>
+</div>
 </div>
 <script>
     function firmwareUploadConfirm()

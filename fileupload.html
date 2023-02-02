@@ -40,29 +40,29 @@
 
             <form name="form1" method="POST" enctype="multipart/form-data" action="upload">
                     <table>
-                        <caption class="caption"> Upload File</caption>
-                    </table>
-                <tr>
-                    <td>
-                        <table>
-                            <tr>
+                        <caption class="caption">Upload File</caption>
+
+                        <tr>
+                            <td>
+                        <tr>
+
                                 <td class="label">File Selection&nbsp;</td>
                                 <td class="value">
                                     <input type="radio" name="UploadOption" value="0" checked>Configuration File<br/>
                                     <input type="radio" name="UploadOption" value="1">Phone Book<br/>
                                     <input type="radio" name="UploadOption" value="2">Program File<br/>
-                            </tr>
                             </td>
-                            <table>
                                 <tr>
                                 <td class="label">File:</td>
                                 <td class="value">&nbsp;<input type="file" name="UploadFile" value="" size="32">
-
-                    </table>
-                            <tr><td><input type="submit" name="UpdateStart" value="Start" onClick="return fileUploadConfirm();">
+                            <tr>
+                                <td>
                         </table>
+
+                        <tr><td><input type="submit" name="UpdateStart" value="Start" onClick="return fileUploadConfirm();">
             </form>
     </div>
+
 </div>
 </body>
 <script>

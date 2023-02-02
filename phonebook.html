@@ -34,42 +34,38 @@
 
                 <table>
                     <caption class="caption">Phone Book</caption>
-                    <td class="label"><b>Name</b></td>
-                    <td class="value"><input type="text" name="phonebookName" value="" maxlength="63" size="20">
-                    </td>
-                    <td class="label"><b>Number</b></td>
-                    <td class="value"><input type="text" name="phonebookNo" value="" maxlength="63" size="20">
-                    </td>
-                    <td class="label"><b>Profile</b> <td class="value"><select id="Account" name="Account" align="left" onchange="">
-                    <option value="0" selected>Hesap 1</option>
-                    <option value="1">Hesap 2</option>
-                    <option value="2">Hesap 3</option>
-                    <option value="3">Hesap 4</option>
-                    <option value="4">Bluetooth</option>
-                </select>
-                    </td>
-                </tr>
-                            <td width="20" align="center"></td>
-                        </tr>
-                        <tr>
-                            <td width="20" align="center"></td>
-                            <td width="120" align="center"></td>
-                            <td witch="120" align="left"><input type="submit" name="save" value=" Add "></td>
-                            <td width="120" align="center"></td>
-                            <td width="20" align="center"></td>
-                        </tr>
+                    <tr>
+                        <td class="label"><b>Name</b></td>
+                        <td class="value"><input type="text" name="phonebookName" value="" maxlength="63" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><b>Number</b></td>
+                        <td class="value"><input type="text" name="phonebookNo" value="" maxlength="63" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><b>Profile</b> <td class="value">
+                            <select id="Account" name="Account" align="left" onchange="">
+                                <option value="0" selected>Hesap 1</option>
+                                <option value="1">Hesap 2</option>
+                                <option value="2">Hesap 3</option>
+                                <option value="3">Hesap 4</option>
+                                <option value="4">Bluetooth</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20" align="center"></td>
+                    </tr>
                 </table>
-                    </form>
-                </td></tr><tr> <font color="red"><b>Phone Book is Empty</b></font>
-            </td></tr></table>
-        </td>
-    </tr>
-</table>
+                    <input type="submit" name="save" value=" Add ">
+
+                </form>
+                <b>Phone Book is Empty</b>
             </div>
 <script LANGUAGE="JavaScript">
     function confirmSubmit()
     {
-        var agree=confirm("Rehberin tamamını silmek istiyor musunuz?");
+        var agree=confirm("Do you want to erase all of your contacts?");
         if (agree)
             return true;
         else
@@ -95,7 +91,7 @@
             return true;
         else
         {
-            alert("Seçim yapılmadı");
+            alert("You did not choose any contact");
             return false;
         }
     }
