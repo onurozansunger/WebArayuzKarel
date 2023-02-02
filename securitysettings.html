@@ -25,20 +25,36 @@
     <div class="container">
     </div>
 </div>
-            <font face="Arial" size="2"><i><b>Güvenlik Ayarları</b></i></font>
-            <hr align="right" width="498" noshade color="#000000" />
+<div class="content">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="generalsettings.html">General Settings</a></li>
+            <li><a href="networksettings.html">Network Settings</a></li>
+            <li><a href="callsettings.html">Call Settings</a></li>
+            <li><a href="codecsettings.html">Codec Settings</a></li>
+            <li><a href="ringtonesettings.html">Ringtone Settings</a></li>
+            <li><a href="keypadtonesettings.html">Keypad Tone Settings</a></li>
+            <li><a href="gainsettings.html">Gain Settings</a></li>
+            <li><a href="systemsettings.html">System Settings</a></li>
+            <li><a href="timesettings.html">Time Settings</a></li>
+            <li><a href="securitysettings.html">Security Settings</a></li>
+            <li><a href="keyprogram.html">Key Programming Settings</a></li>
+            <li><a href="ldapsettings.html">LDAP Settings</a></li>
+
+
+        </ul>
+    </div>
+            <div class="frame">
             <form method="POST" enctype="application/x-www-form-urlencoded" action="securitysettings">
-                <table border="0" bordercolor="#0080C0" width="508" cellpadding="2" cellspacing="0">
-                    <tr><td><table><tr>
-                        <td width="10" align=""></td>
-                        <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Telefon Kilidi</b></font></td>
-                        <td width="300" align=""><input type="checkbox" name="telLock" value="">
+                <table>
+                        <caption class="caption">Security Settings</caption>
+                        <td class="label"><b>Telepone Lock</b></td>
+                        <td class="value"><input type="checkbox" name="telLock" value="">
                         </td>
                     </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Telefon Şifresi</b></font></td>
-                            <td width="300" align=""><input type="password" name="telPassword" value="123456" maxlength="31" size="15">
+                            <td class="label"><b>Telephone Password</b></td>
+                            <td class="value"><input type="password" name="telPassword" value="123456" maxlength="31" size="15">
                             </td>
                         </tr>
                         <tr height=20>
@@ -46,66 +62,62 @@
                             <td></td>
                             <td></td>
                         </tr>
-                        <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align=""><font face="Arial" size="2" color="#0080C0"><b>Güvenlik Seviyesi</b></font></td>
-                            <td width="300" align=""></td>
+                </table>
+                <table>
+                            <tr>
+                            <td class="caption"><b>Security Level</b></td>
+                            <td class="value"></td>
                         </tr>
+                    <td></td>
+                    <td></td>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Telefon Defteri</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="phonebookLock" value="">
+                            <td class="label"><b>Phonebook Lock</b></td>
+                            <td class="value"><input type="checkbox" name="phonebookLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Arama Kayıtları</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="callLogLock" value="">
+                            <td class="label"><b>Call Log Lock</b></td>
+                            <td class="value"><input type="checkbox" name="callLogLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Mesajlar</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="messagesLock" value="">
+                            <td class="label"><b>Message Lock</b></td>
+                            <td class="value"><input type="checkbox" name="messagesLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Sistem Ayarları</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="systemSettingsLock" value="">
+                            <td class="label"><b>System Settings Lock</b></td>
+                            <td class="value"><input type="checkbox" name="systemSettingsLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Ayarlar</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="settingsLock" value="">
+                            <td class="label"><b>Settings Lock</b></td>
+                            <td class="value"><input type="checkbox" name="settingsLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>PBX Ayarları</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="PbxSettingsLock" value="">
+                            <td class="label"><b>PBX Settings Lock</b></font></td>
+                            <td class="value"><input type="checkbox" name="PbxSettingsLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Alarm</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="alarmSettingsLock" value="">
+                            <td class="label"><b>Alarm Settings Lock</b></font></td>
+                            <td class="value"><input type="checkbox" name="alarmSettingsLock" value="">
                             </td>
                         </tr>
                         <tr>
-                            <td width="10" align=""></td>
-                            <td width="180" align="left"><font face="Arial" size="2" color="#0080C0"><b>Sip Ayarları</b></font></td>
-                            <td width="300" align=""><input type="checkbox" name="sipSettingsLock" value="">
+                            <td class="label"><b>SIP Settings Lock</b></font></td>
+                            <td class="value"><input type="checkbox" name="sipSettingsLock" value="">
                             </td>
                         </tr>
                     </table></td></tr></table>
                 <br>
-                <input type="submit" name="save" value="Kaydet">
+                <input type="submit" name="save" value="Save">
             </form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
+            </div>
+            </div>
 </body>
 </html>
