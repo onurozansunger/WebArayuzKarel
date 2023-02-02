@@ -39,8 +39,7 @@
     <div class="frame">
         <td width="2" bgcolor="#000000" ></td>
         <td width="508" valign="top" align="right" >
-            <font face="Arial" size="2"><i><b>Yazılım Güncelle</b></i></font>
-            <hr align="right" width="498" noshade color="#000000"/>
+            <font face="Arial" size="2"><i><b>Firmware Update</b></i></font>
             <form name="form1" method="POST" enctype="multipart/form-data" action="firmwareupdate" OnSubmit=submit_confirm()>
                 <table border="0" width="508" cellpadding="0" cellspacing="0">
                     <tr><td width="498" align="center"><table border="0"  width="498" cellpadding="2" cellspacing="0">
@@ -50,21 +49,20 @@
                         </td>
                     </tr>
                     </table></td></tr><tr><td width="498"><table border="0"  width="498" cellpadding="2" cellspacing="0" bordercolor="#0080C0">
-                    <tr><td align="right" width="160"><font face="Arial"size="2,5" color="#0080C0">Dosya:&nbsp;</font>
+                    <tr><td align="right" width="160"><font face="Arial"size="2,5" color="#0080C0">File:&nbsp;</font>
                     </td><td width="338">&nbsp;<input name=FirmwareFile type="file" value="" size="32">
                     </td></tr></table></td></tr><tr><td align="center"><table border="0"  width="498" cellpadding="0" cellspacing="0">
-                    <tr><td align="center" width="498"><input type="submit" name="FirmwareStart" value="Başla" onClick="return firmwareUploadConfirm();">
+                    <tr><td align="center" width="498"><input type="submit" name="FirmwareStart" value="Start" onClick="return firmwareUploadConfirm();">
                     </td></tr></table></td></tr></table></form>
         </td>
     </tr>
 </table>
-<hr align="left" width="672" noshade color="#000000"/>
-<script LANGUAGE="JavaScript">
+<script>
     function firmwareUploadConfirm()
     {
         if( document.form1.FirmwareFile.value == "" )
         {
-            alert('Dosya boş bırakılamaz');
+            alert('File cannot be left empty');
             return false;
         }
         else
