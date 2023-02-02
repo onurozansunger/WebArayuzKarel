@@ -40,7 +40,7 @@ ul {
     width: 60%;
     min-height: 100px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 50px 20px;
     border-bottom: 3px solid #f78f1e;
     border-right:3px solid #f78f1e;
     border-left:3px solid #f78f1e;
@@ -62,13 +62,11 @@ ul {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     color: #00aeef;
     border-bottom: 1px solid #f78f1e;
 }
-.frame td.value{
-    display:initial;
-}
+
 .frame table {
     margin: auto;
     border-collapse: collapse;
@@ -76,7 +74,7 @@ ul {
 }
 
 .frame table td {
-    padding: 10px 0px;
+    padding: 20px 10px;
 }
 
 .frame td.label {
@@ -86,6 +84,7 @@ ul {
 }
 
 .frame td.value {
+    display:unset;
     font-size: large;
     color: #000000;
 }
