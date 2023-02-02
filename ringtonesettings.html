@@ -80,14 +80,14 @@
             </form>
             <form id=1 name="form2" method="POST" enctype="multipart/form-data" action="ringtonesettings">
                 <table>
-                    <td class="caption">You can upload .wav files in U-Law or A-Law format</td>
+                    <caption class="caption">You can upload .wav files in U-Law or A-Law format</caption>
                     <tr><td class="label"><b>Empty Space</b></td>
                     <td class="value"><b>2.31 MB</b></td>
                    </tr>
                       <tr><td class="label"><b>Upload Ringtone</b></td>
-                        <td class="value">&nbsp;<input name=RingtoneFile type="file" value="" size="32">
-                    </td></tr></table></td></tr><tr><td align="center"><table border="0"  width="498" cellpadding="0" cellspacing="0">
-                <tr><td align="center" width="498"><input type="submit" name="UploadStart" value="Start" onClick="return ringtoneUploadConfirm();">
+                        <td class="value"><input name=RingtoneFile type="file" value="" size="32">
+                    </td></tr></table></td></tr><tr><td>
+                <tr><td><input type="submit" name="UploadStart" value="Start" onClick="return ringtoneUploadConfirm();">
                 </td></tr></table></td></tr></table></form>
                 </td>
                 </tr>
@@ -98,7 +98,7 @@
     {
         if( document.form2.RingtoneFile.value == "" )
         {
-            alert('Dosya boş bırakılamaz');
+            alert('File can not be empty.');
             return false;
         }
         else
