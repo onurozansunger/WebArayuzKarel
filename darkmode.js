@@ -1,29 +1,28 @@
-const select = document.querySelector("#color-select");
-    const collection = document.getElementsByClassName("mainheader");
+    const select = document.querySelector("#color-select");
+    const collection1 = document.getElementsByClassName("mainheader");
     const collection2 = document.getElementsByClassName("li");
-    console.log(collection);
+    const collection3 = document.getElementsByClassName("menu");
 
     // Sistemin temasını oku ve ona göre değiştir
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    select.value = "#505050";
-} else {
-    select.value = "#00aeef";
-}
+    select.value = "#505050";}
+    else {
+    select.value = "#00aeef";}
 
     document.body.style.backgroundColor = select.value;
     document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
 
-    collection[0].style.backgroundColor = select.value;
-    collection[1].style.backgroundColor = select.value;
-    collection[2].style.backgroundColor = select.value;
-    collection[3].style.backgroundColor = select.value;
-    collection[4].style.backgroundColor = select.value;
+        for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.backgroundColor = select.value;
+        }
 
-    collection2[0].style.backgroundColor = select.value;
-    collection2[1].style.backgroundColor = select.value;
-    collection2[2].style.backgroundColor = select.value;
-    collection2[3].style.backgroundColor = select.value;
-    collection2[4].style.backgroundColor = select.value;
+        for (let i = 0; i < collection2.length; i++) {
+            collection2[i].style.backgroundColor = select.value;
+        }
+
+        for (let i = 0; i < collection3.length; i++) {
+            collection3[i].style.backgroundColor = select.value;
+        }
 
 
 
@@ -34,15 +33,15 @@ const select = document.querySelector("#color-select");
         //document.querySelector(".navbar").style.backgroundColor = select.value;
         //document.querySelector(".frame").style.backgroundColor = select.value;
 
-    collection[0].style.backgroundColor = select.value;
-    collection[1].style.backgroundColor = select.value;
-    collection[2].style.backgroundColor = select.value;
-    collection[3].style.backgroundColor = select.value;
-    collection[4].style.backgroundColor = select.value;
+        for (let i = 0; i < collection1.length; i++) {
+            collection1[i].style.backgroundColor = select.value;
+        }
 
-    collection2[0].style.backgroundColor = select.value;
-    collection2[1].style.backgroundColor = select.value;
-    collection2[2].style.backgroundColor = select.value;
-    collection2[3].style.backgroundColor = select.value;
-    collection2[4].style.backgroundColor = select.value;
+        for (let i = 0; i < collection2.length; i++) {
+            collection2[i].style.backgroundColor = select.value;
+        }
+
+        for (let i = 0; i < collection3.length; i++) {
+            collection3[i].style.backgroundColor = select.value;
+        }
 });
