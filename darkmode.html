@@ -69,7 +69,8 @@
 
     // Sistemin temasını oku ve ona göre değiştir
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        select.value = "#505050";}
+        select.value = "#505050";
+    }
     else {
         select.value = "#00aeef";}
 
@@ -96,6 +97,11 @@
         document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
         //document.querySelector(".navbar").style.backgroundColor = select.value;
         //document.querySelector(".frame").style.backgroundColor = select.value;
+        const colorSelect = document.getElementById("color-select");
+        const selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
+       // if (selectedColor = #505050)
+
+
 
         for (let i = 0; i < collection1.length; i++) {
             collection1[i].style.backgroundColor = select.value;
