@@ -57,3 +57,8 @@ select.addEventListener("change", function() {
         collection3[i].style.backgroundColor = select.value;
     }
 });
+
+
+//  #37393E discord açık
+//  #2F3136 discord orta
+//  #002225 discord koyu
