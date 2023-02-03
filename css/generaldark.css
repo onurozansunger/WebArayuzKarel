@@ -7,7 +7,7 @@
 }
 
 #dark-mode-toggle {
-    background-color: #404040;
+    background-color: #CCD1D1;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -17,13 +17,13 @@
 }
 
 #dark-mode-toggle:hover {
-    background-color: #444;
+    background-color: #CCD1D1;
 }
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background: #404040;
+    background: #505050;
 }
 
 ul {
@@ -37,7 +37,7 @@ ul {
 }
 
 .navbar {
-    background-color: #404040;
+    background-color: #CCD1D1;
     padding: 20px 0;
     border-bottom: 3px solid #e9943e;
     box-shadow: #0000003b 0px 10px 5px -5px;
@@ -57,15 +57,15 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #404040;
+    background: #CCD1D1;
     width: 60%;
     min-height: 100px;
     margin: 0 auto;
     padding: 50px 20px;
-    border-bottom: 3px solid #ffffff;
-    border-right:3px solid #ffffff;
-    border-left:3px solid #ffffff;
-    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #f78f1e;
+    border-right:3px solid #f78f1e;
+    border-left:3px solid #f78f1e;
+    border-top: 3px solid #f78f1e;
 }
 
 .frame:before {
@@ -85,7 +85,7 @@ ul {
     font-weight: bold;
     margin-top: -50px;
     color: #00aeef;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #f78f1e;
 }
 
 .frame table {
@@ -123,7 +123,7 @@ input[type="submit"] {
 .mainmenu {
     width:100%;
     text-align: center;
-    background-color: #404040;
+    background-color: #505050FF;
     width: max-content;
     margin: 0;
     padding: 0;
@@ -132,12 +132,12 @@ input[type="submit"] {
 }
 .mainmenuframe {
     width: 100%;
-    background: #404040;
+    background: #505050FF;
     display: flex;
     justify-content: center;
 }
 .mainmenu li {
-    background-color: #404040;
+    background-color: #505050FF;
     list-style: none;
     color: #e9943e;
     font-weight: 300;
