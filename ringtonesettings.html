@@ -48,15 +48,17 @@
             <form id= 0 name="form1" method="POST" enctype="application/x-www-form-urlencoded" action="ringtonesettings">
                 <table>
                     <caption class="caption">Ringtone Settings</caption>
+                    <tr>
                         <td class="label"><b>Ringtone Level</b></td>
-                        <td class="value"><input type="text" name="ringtoneLevel" value="7" maxlength="2" size="5" placeholder="0-15">
+                        <td class="value"><input type="text" name="ringtoneLevel" value="7" maxlength="2" size="5" placeholder="0-15"></td>
                     </tr>
                         <tr>
                             <td class="label"><b>Ringtone</b></td>
-                            <td class="value"><select name="Ringtone" align="left">
+                            <td class="value">
+                                <select name="Ringtone" align="left">
                                 <option value="Ring1.wav" selected>Ring1.wav</option>
                                 <option value="Ring2.wav">Ring2.wav</option>
-                            </select>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -71,25 +73,34 @@
                             </select>
                             </td>
                         </tr>
-                    </table></td></tr></table>
+                        <tr>
+                            <td class="label" colspan="2">
+                                <div class="caption">You can upload .wav files in U-Law or A-Law format</div>
+                            </td>
+                        </tr>
+                    </table>
                 <br>
-                <input class="value" type="submit" name="erase" value="Delete" width=60>
-                <input class="value" type="submit" name="save" value="Save" width=60>
+                <div class="buttons">
+                    <input class="value" type="submit" name="erase" value="Delete" width=60>
+                    <input class="value" type="submit" name="save" value="Save" width=60>
+                </div>
             </form>
             <form id=1 name="form2" method="POST" enctype="multipart/form-data" action="ringtonesettings">
                 <table>
-                    <caption class="caption">You can upload .wav files in U-Law or A-Law format</caption>
                     <tr><td class="label"><b>Empty Space</b></td>
                     <td class="value"><b>2.31 MB</b></td>
-                   </tr>
-                      <tr><td class="label"><b>Upload Ringtone</b></td>
-                        <td class="value"><input name=RingtoneFile type="file" value="" size="32">
-                    </td></tr></table></td></tr><tr><td>
-                <tr><td><input type="submit" name="UploadStart" value="Start" onClick="return ringtoneUploadConfirm();">
-                </td></tr></table></td></tr></table></form>
-                </td>
-                </tr>
+                    </tr>
+                    <tr>
+                        <td class="label"><b>Upload Ringtone</b></td>
+                        <td class="value"><input name=RingtoneFile type="file" value="" size="32"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="UploadStart" value="Start" onClick="return ringtoneUploadConfirm();">
+                        </td>
+                    </tr>
                 </table>
+            </form>
             </div>
 <script LANGUAGE="JavaScript">
     function ringtoneUploadConfirm()

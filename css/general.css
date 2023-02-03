@@ -92,21 +92,43 @@ form{
 }
 
 .frame td.label {
+    width: 100%;
     padding-right: 10px;
     font-size: large;
     color: #f78f1e;
 }
 
 .frame td.value {
-    display:table-cell;
+    display:flex;
+    justify-content: end;
     font-size: large;
     color: #000000;
     width: 200px;
     text-align: end;
 }
 
+.frame .value .date-input{
+    width: 120px;
+}
+
+.frame .value i{
+    margin-right: auto;
+}
+
 input[type="text"],input[type="password"],select {
     width: inherit;
+}
+
+.frame .buttons{
+    text-align: center;
+}
+.frame .buttons input{
+    display: inline-block;
+}
+
+.frame .label .caption{
+    margin-top:unset;
+    font-size: 14px;
 }
 
 .navbar-nav button {
