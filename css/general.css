@@ -77,7 +77,12 @@ ul {
     border-bottom: 1px solid #f78f1e;
 }
 
+form{
+    width: 100%;
+}
+
 .frame table {
+    width:80%;
     border-collapse: collapse;
     margin: 20px auto auto;
 }
@@ -93,10 +98,17 @@ ul {
 }
 
 .frame td.value {
-    display:inline-block;
+    display:table-cell;
     font-size: large;
     color: #000000;
+    width: 200px;
+    text-align: end;
 }
+
+input[type="text"],input[type="password"],select {
+    width: inherit;
+}
+
 .navbar-nav button {
     z-index: 100000;
 }
