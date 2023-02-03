@@ -5,7 +5,6 @@
 .mainmenu {
     width:100%;
     text-align: center;
-    display: block;
     background-color: #00aeef;
     width: max-content;
     margin: 0;
@@ -26,7 +25,6 @@
     font-weight: 300;
     padding: 6px 12px;
     float:left;
-    display: block;
     text-decoration: none;
 }
 
@@ -41,7 +39,6 @@
     width: 100%;
     color: #ffffff;
     text-decoration: none;
-    display: block;
 }
 .mainheader {
     font-weight: 400;
