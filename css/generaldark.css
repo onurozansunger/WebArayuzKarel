@@ -7,8 +7,8 @@
 }
 
 #dark-mode-toggle {
-    background-color: #ffffff;
-    color: #00aeef;
+    background-color: #404040;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -17,13 +17,13 @@
 }
 
 #dark-mode-toggle:hover {
-    background-color: #ffffff;
+    background-color: #444;
 }
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background: #00aeef;
+    background: #404040;
 }
 
 ul {
@@ -37,7 +37,7 @@ ul {
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #404040;
     padding: 20px 0;
     border-bottom: 3px solid #e9943e;
     box-shadow: #0000003b 0px 10px 5px -5px;
@@ -57,15 +57,26 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: #404040;
     width: 60%;
     min-height: 100px;
     margin: 0 auto;
     padding: 50px 20px;
-    border-bottom: 3px solid #f78f1e;
-    border-right:3px solid #f78f1e;
-    border-left:3px solid #f78f1e;
-    border-top: 3px solid #f78f1e;
+    border-bottom: 3px solid #ffffff;
+    border-right:3px solid #ffffff;
+    border-left:3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+}
+
+.frame:before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    width: 10%;
+    height: 10%;
+    border-top: none;
+    border-bottom: none;
 }
 
 .frame .caption {
@@ -74,12 +85,13 @@ ul {
     font-weight: bold;
     margin-top: -50px;
     color: #00aeef;
-    border-bottom: 1px solid #f78f1e;
+    border-bottom: 1px solid #ffffff;
 }
 
 .frame table {
+    margin: auto;
     border-collapse: collapse;
-    margin: 20px auto auto;
+    margin-top: 20px;
 }
 
 .frame table td {
@@ -95,7 +107,7 @@ ul {
 .frame td.value {
     display:inline-block;
     font-size: large;
-    color: #000000;
+    color: #ffffff;
 }
 .navbar-nav button {
     z-index: 100000;
@@ -120,12 +132,12 @@ input[type="submit"] {
 }
 .mainmenuframe {
     width: 100%;
-    background: #00aeef;
+    background: #404040;
     display: flex;
     justify-content: center;
 }
 .mainmenu li {
-    background-color: #00aeef;
+    background-color: #404040;
     list-style: none;
     color: #e9943e;
     font-weight: 300;
@@ -139,7 +151,7 @@ input[type="submit"] {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: #00aeef;
+    background: #404040;
 }
 .mainmenu li a {
     width: 100%;
@@ -153,7 +165,7 @@ input[type="submit"] {
 
 }
 .menu {
-    background-color: #00aeef;
+    background-color: #404040;
     width: max-content;
     margin: 0;
     padding: 0;
@@ -180,4 +192,3 @@ input[type="submit"] {
     text-decoration: none;
     display: block;
 }
-

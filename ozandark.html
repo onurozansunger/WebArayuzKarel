@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KAREL IPK-603</title>
+  <link id="style" rel="stylesheet" href="css/General.css">
+
+</head>
+<div class="header">
+  <button id="dark-mode-toggle">Dark Mode</button>
+</div>
+
+<body>
+<div class="navbar">
+  <div class="container">
+    <img class="logo" src="assets/logo.png" />
+  </div>
+</div>
+<div class="mainmenuframe">
+  <ul class="mainmenu">
+    <li> <a class="mainheader" href="systeminfo.html">System Information</a></li>
+    <li> <a class="mainheader" href="sipaccountsettings.html">SIP</a></li>
+    <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+    <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+    <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+  </ul>
+</div>
+<div class="footer">
+  <div class="container">
+  </div>
+</div>
+
+<div class="frame">
+  <table>
+    <caption class="caption">System Information</caption>
+    <tr>
+      <td class="label"><b>MAC Address:</b></td>
+      <td class="value">00:08:D1:0B:5E:62</td>
+    </tr>
+    <tr>
+      <td class="label"><b>Version:</b></td>
+      </td>
+      <td class="value">AAA_052.00108 (IPv6)</td>
+    </tr>
+    <tr>
+      <td class="label"><b>SIP SPC:</b></td>
+      <td class="value">DCB_08</td>
+    </tr>
+    <tr>
+      <td class="label"><b>Memory Usage:</b></td>
+      <td class="value">%49</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const style = document.getElementById("style");
+
+  toggle.addEventListener("click", function() {
+    if (style.getAttribute("href") === "css/General.css") {
+      style.setAttribute("href", "css/Generaldark.css");
+      toggle.textContent = "Light Mode";
+    } else {
+      style.setAttribute("href", "css/General.css");
+      toggle.textContent = "Dark Mode";
+    }
+  });
+
+
+</script>
+</body>
+</html>
