@@ -52,7 +52,6 @@
 <style>
     #color-select option[value="#00aeef"]
     #color-select option[value="#505050"]
-    #color-select option[value="#CCD1D1"]
 </style>
 
 <select id="color-select" style="position: absolute; right: 10px; top: 10px;">
@@ -60,81 +59,7 @@
     <option value="#505050">Dark</option>
 </select>
 
-<script>
-
-    const select = document.querySelector("#color-select");
-    const collection1 = document.getElementsByClassName("mainheader");
-    const collection2 = document.getElementsByClassName("li");
-    const collection3 = document.getElementsByClassName("menu");
-
-    // Sistemin temasını oku ve ona göre değiştir
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        select.value = "#505050";
-    }
-    else {
-        select.value = "#00aeef";}
-
-    document.body.style.backgroundColor = select.value;
-    document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
-
-    for (let i = 0; i < collection1.length; i++) {
-        collection1[i].style.backgroundColor = select.value;
-    }
-
-    for (let i = 0; i < collection2.length; i++) {
-        collection2[i].style.backgroundColor = select.value;
-    }
-
-    for (let i = 0; i < collection3.length; i++) {
-        collection3[i].style.backgroundColor = select.value;
-    }
-
-
-
-    // Checkbox a göre değiştir
-    select.addEventListener("change", function() {
-        document.body.style.backgroundColor = select.value;
-        document.querySelector(".mainmenuframe").style.backgroundColor = select.value;
-        //document.querySelector(".navbar").style.backgroundColor = select.value;
-        //document.querySelector(".frame").style.backgroundColor = select.value;
-        const colorSelect = document.getElementById("color-select");
-        const selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
-       // if (selectedColor = #505050)
-
-
-
-        for (let i = 0; i < collection1.length; i++) {
-            collection1[i].style.backgroundColor = select.value;
-        }
-
-        for (let i = 0; i < collection2.length; i++) {
-            collection2[i].style.backgroundColor = select.value;
-        }
-
-        for (let i = 0; i < collection3.length; i++) {
-            collection3[i].style.backgroundColor = select.value;
-        }
-    });
-
-
-    //const darkButton = document.querySelector('.dark-mode-button');
-    //const navbar = document.querySelector('.navbar');
-    //const frame = document.querySelector('.frame');
-
-    //darkButton.addEventListener('click', function () {
-      //  document.body.classList.toggle('dark-mode');
-
-        //if (document.body.classList.contains('dark-mode')) {
-          //  navbar.style.backgroundColor = 'green';
-            //frame.style.backgroundColor = 'green';
-        //} else {
-          //  navbar.style.backgroundColor = '';
-            //frame.style.backgroundColor = '';
-        //}
-    //});
-
-
-</script>
+<script src="darkmode.js"></script>
 
 
 </body>
