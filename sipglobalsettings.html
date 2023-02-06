@@ -2,10 +2,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603</title>
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/mainmenu.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link id="style" rel="stylesheet" href="css/General.css">
 </head>
+<button id="dark-mode-toggle">Dark Mode</button>
 <body>
 <div class="navbar">
     <div class="container">
@@ -157,6 +156,36 @@
     {
         OnNatType();
     }
+    const toggle = document.getElementById("dark-mode-toggle");
+    const style = document.getElementById("style");
+    toggle.addEventListener("click", function() {
+        if (style.getAttribute("href") === "css/General.css") {
+            style.setAttribute("href", "css/Generaldark.css");
+            toggle.textContent = "Light Mode";
+        } else {
+            style.setAttribute("href", "css/General.css");
+            toggle.textContent = "Dark Mode";
+        }
+    });
+
+    const menuLinks = document.querySelectorAll(".mainheader");
+
+    menuLinks.forEach(function(menuLink) {
+        menuLink.addEventListener("click", function() {
+            menuLinks.forEach(function(otherLink) {
+                otherLink.classList.remove("active");
+            });
+            this.classList.add("active");
+            localStorage.setItem("activeLink", this.textContent);
+        });
+    });
+
+    const activeLink = localStorage.getItem("activeLink");
+    menuLinks.forEach(function(menuLink) {
+        if (menuLink.textContent === activeLink) {
+            menuLink.classList.add("active");
+        }
+    });
 </script>
 </body>
 </html>

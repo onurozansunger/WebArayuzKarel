@@ -12,6 +12,9 @@
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -51,6 +54,10 @@ ul {
     color: #ffffff;
     height: 0%;
 }
+.sidebar-menu-item.active {
+    color: #e9943e;
+}
+
 
 .frame {
     display: flex;
@@ -163,6 +170,9 @@ input[type="submit"] {
     font-size: 18px;
     Padding: 0 25px;
 
+}
+.mainheader.active {
+    color: #e9943e;
 }
 .menu {
     background-color: #505050;

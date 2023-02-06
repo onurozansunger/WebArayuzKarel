@@ -2,10 +2,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KAREL IPK-603</title>
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/mainmenu.css" />
-  <link rel="stylesheet" href="css/menu.css" />
+  <link id="style" rel="stylesheet" href="css/General.css">
 </head>
+<button id="dark-mode-toggle">Dark Mode</button>
 <body>
 <div class="navbar">
   <div class="container">
@@ -14,11 +13,11 @@
 </div>
 <div class="mainmenuframe">
   <ul class="mainmenu">
-    <li class="li"> <a class="mainheader" href="systeminfo.html">System Information</a></li>
-    <li class="li"> <a class="mainheader" href="sipaccountsettings.html">SIP</a></li>
-    <li class="li"> <a class="mainheader" href="generalsettings.html">Settings</a></li>
-    <li class="li"> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
-    <li class="li"> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
+    <li> <a class="mainheader" href="systeminfo.html">System Information</a></li>
+    <li> <a class="mainheader" href="sipaccountsettings.html">SIP</a></li>
+    <li> <a class="mainheader" href="generalsettings.html">Settings</a></li>
+    <li> <a class="mainheader" href="phonebook.html">Phone Book</a></li>
+    <li> <a class="mainheader" href="factorysettings.html">Technical Support</a></li>
   </ul>
 </div>
 <div class="footer">
@@ -93,7 +92,7 @@
               </td>
             </tr>
             <tr>
-              <td class="label"><b>SIP Port 2</b></font</td>
+              <td class="label"><b>SIP Port 2</b></td>
               <td class="value"><input type="text" name="RegistrarPort2" value="5060" maxlength="5" size="15" placeholder="1-65535">
             </tr>
             <tr>
@@ -102,7 +101,7 @@
               </td>
             </tr>
           <tr>
-            <td class="label"><b>SIP Port 3</b></font</td>
+            <td class="label"><b>SIP Port 3</b></td>
             <td class="value"><input type="text" name="RegistrarPort3" value="5060" maxlength="5" size="15" placeholder="1-65535">
             </tr>
             <tr>
@@ -135,7 +134,7 @@
             </tr>
             <tr>
               <td class="label"><b>Status Notification Method</b></td>
-              <td class="value" align=""><select id="PresenceMode" name="PresenceMode" align="left" onchange="">
+              <td class="value"><select id="PresenceMode" name="PresenceMode" align="left" onchange="">
                 <option value="0" selected>Status Server</option>
                 <option value="1">End to End</option>
                 <option value="2">RLS</option>
@@ -259,6 +258,37 @@
     var comboValue = combo.value;
     location.href='sipaccountsettings.html?account='+comboValue;
   }
+    const toggle = document.getElementById("dark-mode-toggle");
+    const style = document.getElementById("style");
+    toggle.addEventListener("click", function() {
+      if (style.getAttribute("href") === "css/General.css") {
+        style.setAttribute("href", "css/Generaldark.css");
+        toggle.textContent = "Light Mode";
+      } else {
+        style.setAttribute("href", "css/General.css");
+        toggle.textContent = "Dark Mode";
+      }
+    });
+
+  const menuLinks = document.querySelectorAll(".mainheader");
+
+  menuLinks.forEach(function(menuLink) {
+    menuLink.addEventListener("click", function() {
+      menuLinks.forEach(function(otherLink) {
+        otherLink.classList.remove("active");
+      });
+      this.classList.add("active");
+      localStorage.setItem("activeLink", this.textContent);
+    });
+  });
+
+  const activeLink = localStorage.getItem("activeLink");
+  menuLinks.forEach(function(menuLink) {
+    if (menuLink.textContent === activeLink) {
+      menuLink.classList.add("active");
+    }
+  });
+
 </script>
 </body>
 </html>

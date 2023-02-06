@@ -56,17 +56,6 @@
 <script>
   const toggle = document.getElementById("dark-mode-toggle");
   const style = document.getElementById("style");
-
-  function setInitialColorScheme() {
-    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      style.setAttribute("href", "css/Generaldark.css");
-      toggle.textContent = "Light Mode";
-    } else {
-      style.setAttribute("href", "css/General.css");
-      toggle.textContent = "Dark Mode";
-    }
-  }
-
   toggle.addEventListener("click", function() {
     if (style.getAttribute("href") === "css/General.css") {
       style.setAttribute("href", "css/Generaldark.css");
@@ -77,7 +66,24 @@
     }
   });
 
-  setInitialColorScheme();
+  const menuLinks = document.querySelectorAll(".mainheader");
+
+  menuLinks.forEach(function(menuLink) {
+    menuLink.addEventListener("click", function() {
+      menuLinks.forEach(function(otherLink) {
+        otherLink.classList.remove("active");
+      });
+      this.classList.add("active");
+      localStorage.setItem("activeLink", this.textContent);
+    });
+  });
+
+  const activeLink = localStorage.getItem("activeLink");
+  menuLinks.forEach(function(menuLink) {
+    if (menuLink.textContent === activeLink) {
+      menuLink.classList.add("active");
+    }
+  });
 
 </script>
 </body>
