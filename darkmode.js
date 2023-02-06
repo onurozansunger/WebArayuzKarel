@@ -4,10 +4,12 @@ const collection2 = document.getElementsByClassName("li");
 const collection3 = document.getElementsByClassName("menu");
 const navbar = document.querySelector(".navbar");
 const frame = document.querySelector(".frame");
+const mainmenu = document.querySelector(".mainmenu");
 const mainmenuframe = document.querySelector(".mainmenuframe");
 const body = document.body;
 const setBackgroundColor = (color) => {
     body.style.backgroundColor = color;
+    mainmenu.style.backgroundColor = color;
     mainmenuframe.style.backgroundColor = color;
     for (let i = 0; i < collection1.length; i++) {
         collection1[i].style.backgroundColor = color;}
