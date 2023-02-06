@@ -54,11 +54,6 @@ ul {
     color: #ffffff;
     height: 0%;
 }
-.sidebar-menu-item.active {
-    color: #e9943e;
-}
-
-
 .frame {
     display: flex;
     flex-direction: column;
@@ -220,16 +215,17 @@ input[type="submit"] {
 }
 
 
-.menu li a {
+.menu li a{
     width: 100%;
     color: #ffffff;
     text-decoration: none;
     display: block;}
 
-.menu li a .active {
+.menu li a.active {
     width: 100%;
     color: #e9943e;
     text-decoration: none;
-    display: block;
-}
+    display: block;}
+
+
 
