@@ -290,21 +290,10 @@
     }
   });
 
-  const menuItems = document.querySelectorAll('.menu li a');
-  for (const item of menuItems) {
-    item.addEventListener('click', function () {
-      for (const i of menuItems) {
-        i.style.backgroundColor = 'white';
-      }
-      this.style.backgroundColor = 'lightblue';
-    });
-
-
     const mode = localStorage.getItem("mode");
     if (mode === "dark") {
       style.setAttribute("href", "css/Generaldark.css");
       toggle.textContent = "Light Mode";
-    }
   }
 
 </script>

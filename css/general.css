@@ -216,16 +216,14 @@ input[type="submit"] {
 
 
 .menu li a{
-    width: 100%;
     color: #ffffff;
     text-decoration: none;
-    display: block;}
+   }
 
 .menu li a.active {
-    width: 100%;
     color: #e9943e;
     text-decoration: none;
-    display: block;}
+ }
 
 
 
