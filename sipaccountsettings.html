@@ -252,23 +252,24 @@
 </table>
       </div>
 <script LANGUAGE="JavaScript">
-  function ChangeAccount()
-  {
+  function ChangeAccount() {
     var combo = document.getElementById("Account");
     var comboValue = combo.value;
     location.href='sipaccountsettings.html?account='+comboValue;
   }
-    const toggle = document.getElementById("dark-mode-toggle");
-    const style = document.getElementById("style");
-    toggle.addEventListener("click", function() {
-      if (style.getAttribute("href") === "css/General.css") {
-        style.setAttribute("href", "css/Generaldark.css");
-        toggle.textContent = "Light Mode";
-      } else {
-        style.setAttribute("href", "css/General.css");
-        toggle.textContent = "Dark Mode";
-      }
-    });
+  const toggle = document.getElementById("dark-mode-toggle");
+  const style = document.getElementById("style");
+  toggle.addEventListener("click", function() {
+    if (style.getAttribute("href") === "css/General.css") {
+      style.setAttribute("href", "css/Generaldark.css");
+      localStorage.setItem("mode", "dark");
+      toggle.textContent = "Light Mode";
+    } else {
+      style.setAttribute("href", "css/General.css");
+      localStorage.setItem("mode", "light");
+      toggle.textContent = "Dark Mode";
+    }
+  });
 
   const menuLinks = document.querySelectorAll(".mainheader");
 
@@ -288,6 +289,12 @@
       menuLink.classList.add("active");
     }
   });
+
+    const mode = localStorage.getItem("mode");
+    if (mode === "dark") {
+      style.setAttribute("href", "css/Generaldark.css");
+      toggle.textContent = "Light Mode";
+  }
 
 </script>
 </body>
