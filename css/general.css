@@ -218,12 +218,15 @@ input[type="submit"] {
 .menu li a{
     color: #ffffff;
     text-decoration: none;
+    font-size: large;
    }
 
 .menu li a.active {
     color: #e9943e;
     text-decoration: none;
- }
+    font-size: large;
+
+}
 
 
 
