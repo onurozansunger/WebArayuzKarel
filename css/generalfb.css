@@ -65,10 +65,10 @@ ul {
     min-height: 100px;
     margin: 0 auto;
     padding: 50px 20px;
-    border-bottom: 3px solid #163962;
-    border-right:3px solid #163962;
-    border-left:3px solid #163962;
-    border-top: 3px solid #163962;
+    border-bottom: 3px solid #ffffff;
+    border-right:3px solid #ffffff;
+    border-left:3px solid #ffffff;
+    border-top: 3px solid #ffffff;
 }
 
 .frame .caption {
@@ -103,7 +103,7 @@ form{
 .frame td.value {
     display:table-cell;
     font-size: large;
-    color: #163962;
+    color: #ffffff;
     width: 200px;
     text-align: end;
 }
