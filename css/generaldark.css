@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
 }
-
 #dark-mode-toggle {
     background-color: #CCD1D1;
     color: #ffffff;
@@ -18,38 +17,31 @@
     font-size: 16px;
     cursor: pointer;
 }
-
 #dark-mode-toggle:hover {
     background-color: #CCD1D1;
 }
-
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background: #505050;
 }
-
 ul {
     padding-inline-start: 20px;
 }
-
 .container {
     max-width: 1140px;
     margin: 0 20px;
     padding: 0 15px;
 }
-
 .navbar {
     background-color: #CCD1D1;
     padding: 20px 0;
     border-bottom: 3px solid #e9943e;
     box-shadow: #0000003b 0px 10px 5px -5px;
 }
-
 .navbar .logo {
     height: 50px;
 }
-
 .sidebar {
     color: #ffffff;
     height: 0%;
@@ -57,8 +49,6 @@ ul {
 .sidebar-menu-item.active {
     color: #e9943e;
 }
-
-
 .frame {
     display: flex;
     flex-direction: column;
@@ -74,7 +64,6 @@ ul {
     border-left:3px solid #f78f1e;
     border-top: 3px solid #f78f1e;
 }
-
 .frame .caption {
     text-align: center;
     font-size: 22px;
@@ -83,27 +72,22 @@ ul {
     color: #000000;
     border-bottom: 1px solid #00aeef;
 }
-
 form{
     width: 100%;
 }
-
 .frame table {
     width:62%;
     border-collapse: collapse;
     margin: 20px auto auto;
 }
-
 .frame table td {
     padding: 4px 4px;
 }
-
 .frame td.label {
     padding-right: 10px;
     font-size: large;
     color: #f78f1e;
 }
-
 .frame td.value {
     display:table-cell;
     font-size: large;
@@ -111,11 +95,9 @@ form{
     width: 200px;
     text-align: end;
 }
-
 input[type="text"],input[type="password"],select {
     width: inherit;
 }
-
 .navbar-nav button {
     z-index: 100000;
 }
@@ -152,7 +134,6 @@ input[type="submit"] {
     float:left;
     text-decoration: none;
 }
-
 .mainmenu ul {
     list-style-type: none ;
     margin: 0;
@@ -169,7 +150,6 @@ input[type="submit"] {
     font-weight: 400;
     font-size: 18px;
     Padding: 0 25px;
-
 }
 .mainheader.active {
     color: #00aeef;
@@ -181,32 +161,25 @@ input[type="submit"] {
     padding: 0;
     display: inline-block;
 }
-
 .menu .header {
     font-weight: 400;
     font-size: 18px;
     border-bottom: 1px solid #f78f1e;
 }
-
 .menu li {
     list-style: none;
     color: #ffffff;
     font-weight: 300;
     padding: 6px 12px;
 }
-
-
 .menu li a{
     color: #ffffff;
     text-decoration: none;
     font-size: large;
-
 }
-
 .menu li a.active {
     color: #00aeef;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
-
 }

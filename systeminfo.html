@@ -63,9 +63,7 @@
             toggle.textContent = "Dark Mode";
         }
     });
-
     const menuLinks = document.querySelectorAll(".mainheader");
-
     menuLinks.forEach(function(menuLink) {
         menuLink.addEventListener("click", function() {
             menuLinks.forEach(function(otherLink) {
@@ -75,14 +73,12 @@
             localStorage.setItem("activeLink", this.textContent);
         });
     });
-
     const activeLink = localStorage.getItem("activeLink");
     menuLinks.forEach(function(menuLink) {
         if (menuLink.textContent === activeLink) {
             menuLink.classList.add("active");
         }
     });
-
     const mode = localStorage.getItem("mode");
     if (mode === "dark") {
         style.setAttribute("href", "css/Generaldark.css");

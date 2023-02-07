@@ -6,14 +6,12 @@
     <link id="style" rel="stylesheet" href="css/login.css">
 </head>
 <button id="dark-mode-toggle">Dark Mode</button>
-
 <body>
 <div class="navbar">
     <div class="container">
         <img class="logo" src="assets/logo.png" />
     </div>
 </div>
-
 <div class="login">
     <div class="container">
         <div class="form-frame">
@@ -47,12 +45,10 @@
             toggle.textContent = "Dark Mode";
         }
     });
-
     const mode = localStorage.getItem("mode");
     if (mode === "dark") {
         style.setAttribute("href", "css/logindark.css");
         toggle.textContent = "Light Mode";
-    }
 </script>
 </body>
 </html>
