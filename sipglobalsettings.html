@@ -167,9 +167,7 @@
             toggle.textContent = "Dark Mode";
         }
     });
-
     const menuLinks = document.querySelectorAll(".mainheader");
-
     menuLinks.forEach(function(menuLink) {
         menuLink.addEventListener("click", function() {
             menuLinks.forEach(function(otherLink) {
@@ -179,13 +177,30 @@
             localStorage.setItem("activeLink", this.textContent);
         });
     });
-
     const activeLink = localStorage.getItem("activeLink");
     menuLinks.forEach(function(menuLink) {
         if (menuLink.textContent === activeLink) {
             menuLink.classList.add("active");
         }
     });
+    const sidebarLinks = document.querySelectorAll('.menu li a');
+
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            sidebarLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+            localStorage.setItem('activeLink2', this.getAttribute('href'));
+        });
+
+        if (link.getAttribute('href') === localStorage.getItem('activeLink2')) {
+            link.classList.add('active');
+        }
+    });
+    const mode = localStorage.getItem("mode");
+    if (mode === "dark") {
+        style.setAttribute("href", "css/Generaldark.css");
+        toggle.textContent = "Light Mode";
+    }
 </script>
 </body>
 </html>
