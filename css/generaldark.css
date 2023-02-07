@@ -172,7 +172,7 @@ input[type="submit"] {
 
 }
 .mainheader.active {
-    color: #e9943e;
+    color: #00aeef;
 }
 .menu {
     background-color: #505050;
@@ -204,8 +204,9 @@ input[type="submit"] {
 }
 
 .menu li a.active {
-    color: #e9943e;
+    color: #00aeef;
     text-decoration: none;
-    font-size: large;
+    font-weight: 400;
+    font-size: 18px;
 
 }
