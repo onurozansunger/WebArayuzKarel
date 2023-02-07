@@ -3,8 +3,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KAREL IPK-603 LOGIN</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <link id="style" rel="stylesheet" href="css/login.css">
 </head>
+<button id="dark-mode-toggle">Dark Mode</button>
 
 <body>
 <div class="navbar">
@@ -35,5 +36,26 @@
 <div class="footer">
 
 </div>
+<script>
+    const toggle = document.getElementById("dark-mode-toggle");
+    const style = document.getElementById("style");
+    toggle.addEventListener("click", function() {
+        if (style.getAttribute("href") === "css/login.css") {
+            style.setAttribute("href", "css/logindark.css");
+            localStorage.setItem("mode", "dark");
+            toggle.textContent = "Light Mode";
+        } else {
+            style.setAttribute("href", "css/login.css");
+            localStorage.setItem("mode", "light");
+            toggle.textContent = "Dark Mode";
+        }
+    });
+
+    const mode = localStorage.getItem("mode");
+    if (mode === "dark") {
+        style.setAttribute("href", "css/logindark.css");
+        toggle.textContent = "Light Mode";
+    }
+</script>
 </body>
 </html>
